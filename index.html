@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Where Young Minds Become Achievers | Pragyan Olympiad Academy</title>
+  <meta name="description" content="Premier Olympiad Foundation Coaching Center specializing in Mathematics, Science, Logical Reasoning, and English competitive exam training.">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem('pragyan_theme');
+        if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+        var d = localStorage.getItem('pragyan_dir');
+        if (d === 'rtl') {
+          document.documentElement.setAttribute('dir', 'rtl');
+        }
+      } catch(e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- HEADER & NAVIGATION -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Pragyan Olympiad Academy">
+        <img src="images/logo.png" alt="Pragyan Olympiad Academy Logo" class="brand-logo-img">
+        <div class="brand-logo-text">
+          <span class="brand-name">PRAGYAN</span>
+          <span class="brand-sub">Olympiad Academy</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <div class="nav-item">
+          <a href="index.html" class="nav-link active">Home</a>
+        </div>
+        <div class="nav-item">
+          <a href="home-2.html" class="nav-link ">Home 2</a>
+        </div>
+        <div class="nav-item">
+          <a href="about.html" class="nav-link ">About</a>
+        </div>
+
+        <!-- MEGA MENU FOR PROGRAMS -->
+        <div class="nav-item has-mega">
+          <a href="programs.html" class="nav-link mega-trigger ">
+            Programs
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </a>
+          <div class="mega-menu">
+            <div class="container mega-grid">
+              <div class="mega-intro">
+                <span class="eyebrow" style="color:var(--orange);">FOUNDATION TRAINING</span>
+                <h4 style="margin-top:6px;">Olympiad Programs (Grades 1–10)</h4>
+                <p>Structured conceptual development in Mathematics, Sciences, Logical Reasoning, and English Olympiads.</p>
+                <a href="programs.html" class="btn btn-primary btn-sm">View Full Catalogue →</a>
+              </div>
+              <div class="mega-links-grid">
+                <a href="mathematics.html" class="mega-card-link">
+                  <img src="images/image-65.png" alt="Math Olympiad Proofs" class="mega-card-thumb">
+                  <div class="mega-card-content">
+                    <span class="mega-card-title">Mathematics Olympiad</span>
+                    <span class="mega-card-desc">IMO, NMTC, PRMO, AMC 8/10 foundation & advanced problem-solving.</span>
+                  </div>
+                </a>
+                <a href="science.html" class="mega-card-link">
+                  <img src="images/image-69.png" alt="Science Lab Titrations" class="mega-card-thumb">
+                  <div class="mega-card-content">
+                    <span class="mega-card-title">Science Olympiad</span>
+                    <span class="mega-card-desc">NSO, IJSO, NSEJS rigorous physics, chemistry & biology foundations.</span>
+                  </div>
+                </a>
+                <a href="reasoning.html" class="mega-card-link">
+                  <img src="images/image-73.png" alt="Logical Reasoning Puzzles" class="mega-card-thumb">
+                  <div class="mega-card-content">
+                    <span class="mega-card-title">Logical Reasoning</span>
+                    <span class="mega-card-desc">Mental ability, non-verbal patterns, analytical puzzles & deduction.</span>
+                  </div>
+                </a>
+                <a href="english.html" class="mega-card-link">
+                  <img src="images/image-77.png" alt="English Reading & Lexicon" class="mega-card-thumb">
+                  <div class="mega-card-content">
+                    <span class="mega-card-title">English Olympiad</span>
+                    <span class="mega-card-desc">IEO, spelling, verbal reasoning, linguistics & reading comprehension.</span>
+                  </div>
+                </a>
+                <a href="grades.html" class="mega-card-link">
+                  <img src="images/image-79.png" alt="Grade-Wise Classroom" class="mega-card-thumb">
+                  <div class="mega-card-content">
+                    <span class="mega-card-title">Grade-Wise Learning</span>
+                    <span class="mega-card-desc">Targeted curriculum tracks from Primary (1–3) to Advanced (9–10).</span>
+                  </div>
+                </a>
+                <a href="methodology.html" class="mega-card-link">
+                  <img src="images/image-82.png" alt="Personalized Learning Method" class="mega-card-thumb">
+                  <div class="mega-card-content">
+                    <span class="mega-card-title">Learning Methodology</span>
+                    <span class="mega-card-desc">Concept building, guided practice, weekly diagnostics & analytics.</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <a href="results.html" class="nav-link ">Results</a>
+        </div>
+        <div class="nav-item">
+          <a href="faculty.html" class="nav-link ">Faculty</a>
+        </div>
+        <div class="nav-item">
+          <a href="resources.html" class="nav-link ">Resources</a>
+        </div>
+        <div class="nav-item">
+          <a href="contact.html" class="nav-link ">Contact</a>
+        </div>
+        <div class="nav-item">
+          <a href="dashboard.html" class="nav-link ">Dashboard</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button type="button" class="nav-icon-btn theme-toggle" aria-label="Toggle Theme" title="Toggle Light / Dark Theme">
+          <svg class="theme-icon-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <!-- RTL Toggle (Right-to-Left and Left-to-Right Arrow Design) -->
+        <button type="button" class="nav-icon-btn rtl-toggle" aria-label="Toggle Text Direction" title="Switch Text Direction (RTL / LTR)">
+          <svg class="rtl-icon-svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M16 3l4 4-4 4"/><path d="M20 17H4M8 13l-4 4 4 4"/></svg>
+        </button>
+
+        <!-- Login Button -->
+        <a href="login.html" class="nav-login-btn" title="Student & Parent Portal Login">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span>Login</span>
+        </a>
+
+        <!-- Mobile Drawer Toggle -->
+        <button class="menu-toggle" aria-label="Toggle Navigation Drawer">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-drawer-backdrop"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo" aria-label="Pragyan Olympiad Academy">
+        <img src="images/logo.png" alt="Pragyan Olympiad Academy Logo" class="brand-logo-img" style="height:38px; width:auto;">
+        <div class="brand-logo-text">
+          <span class="brand-name">PRAGYAN</span>
+          <span class="brand-sub">Olympiad Academy</span>
+        </div>
+      </a>
+      <button class="drawer-close" aria-label="Close Navigation Drawer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="drawer-body">
+      <a href="index.html" class="drawer-link active">Home</a>
+      <a href="home-2.html" class="drawer-link ">Home 2</a>
+      <a href="about.html" class="drawer-link ">About</a>
+      
+      <div style="width:100%; display:flex; flex-direction:column; align-items:center;">
+        <a href="programs.html" class="drawer-link drawer-submenu-trigger ">
+          <span>Programs</span>
+          <svg class="drawer-chevron" width="14" height="14" viewBox="0 0 12 12" fill="none"><path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="drawer-submenu">
+          <a href="programs.html" class="drawer-sublink ">All Programs</a>
+          <a href="mathematics.html" class="drawer-sublink ">Mathematics Olympiad</a>
+          <a href="science.html" class="drawer-sublink ">Science Olympiad</a>
+          <a href="reasoning.html" class="drawer-sublink ">Logical Reasoning</a>
+          <a href="english.html" class="drawer-sublink ">English Olympiad</a>
+          <a href="grades.html" class="drawer-sublink ">Grade-Wise Learning</a>
+          <a href="methodology.html" class="drawer-sublink ">Learning Methodology</a>
+        </div>
+      </div>
+
+      <a href="results.html" class="drawer-link ">Results</a>
+      <a href="faculty.html" class="drawer-link ">Faculty</a>
+      <a href="resources.html" class="drawer-link ">Resources</a>
+      <a href="contact.html" class="drawer-link ">Contact</a>
+      <a href="dashboard.html" class="drawer-link ">Dashboard</a>
+    </div>
+    <div class="drawer-footer">
+      <!-- Theme and RTL Buttons in Same Horizontal Line -->
+      <div class="drawer-theme-rtl-row">
+        <button type="button" class="nav-icon-btn theme-toggle" aria-label="Toggle Theme" title="Toggle Light / Dark Theme">
+          <svg class="theme-icon-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button type="button" class="nav-icon-btn rtl-toggle" aria-label="Toggle Text Direction" title="Switch Text Direction (RTL / LTR)">
+          <svg class="rtl-icon-svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M16 3l4 4-4 4"/><path d="M20 17H4M8 13l-4 4 4 4"/></svg>
+        </button>
+      </div>
+
+      <!-- Login CTA Button with Same Design as Desktop Navbar CTA in Image -->
+      <a href="login.html" class="nav-login-btn drawer-login-btn" title="Student & Parent Portal Login">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <span>Login</span>
+      </a>
+    </div>
+  </aside>
+  
+
+  <!-- HERO SECTION: Split Editorial Composition -->
+  <section class="hero-h1">
+    <img src="images/image-17.png" alt="Spacious university-style coaching classroom background" class="hero-h1-bg">
+    <div class="hero-h1-overlay"></div>
+    <div class="hero-h1-pattern"></div>
+    <div class="container hero-h1-grid">
+      <div class="hero-h1-copy">
+        <div class="demo-badge">PREMIER OLYMPIAD FOUNDATION COACHING • GRADES 1 TO 10</div>
+        <h1>Master Concepts. Excel in <span>National & Global Olympiads</span></h1>
+        <p class="lead">
+          Pragyan Olympiad Academy provides structured, concept-first foundation coaching in Mathematics (IMO, PRMO), Science (NSO, IJSO), Logical Reasoning, and English (IEO) for students in Grades 1 to 10. We cultivate analytical inquiry and competitive excellence from the ground up.
+        </p>
+        <div class="btn-group">
+          <a href="programs.html" class="btn btn-primary">Explore Olympiad Programs →</a>
+          <a href="contact.html" class="btn btn-outline">Book Free Diagnostic Test</a>
+        </div>
+        <div class="hero-meta-strip">
+          <div class="hero-meta-item"><span class="hero-meta-dot"></span> Structured Grade 1–10 Syllabi</div>
+          <div class="hero-meta-item"><span class="hero-meta-dot"></span> 85+ Olympiad Mentors</div>
+          <div class="hero-meta-item"><span class="hero-meta-dot"></span> Weekly Diagnostic Analytics</div>
+        </div>
+      </div>
+      <div class="hero-h1-visual">
+        <div class="hero-accent-block"></div>
+        <div class="hero-main-img-wrap">
+          <img src="images/image-1.png" alt="Students collaborating with Olympiad exam books in academic library" loading="eager">
+        </div>
+        <div class="floating-stat-card">
+          <div>
+            <div class="floating-stat-val">1,240+</div>
+            <div class="floating-stat-label">National & State Medals</div>
+          </div>
+          <div style="border-left:1px solid rgba(255,255,255,0.18); padding-left:18px;">
+            <div class="floating-stat-val">99.4%</div>
+            <div class="floating-stat-label">Parent Satisfaction Index</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: Academic Excellence at a Glance -->
+  <section class="stats-band">
+    <div class="container">
+      <div class="stats-grid-4">
+        <div class="stat-block">
+          <div class="stat-number">14,800<span class="stat-accent">+</span></div>
+          <div class="stat-title">Students Trained</div>
+          <div class="stat-caption">Across primary and secondary foundation batches</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-number">1,240<span class="stat-accent">+</span></div>
+          <div class="stat-title">Olympiad Achievers</div>
+          <div class="stat-caption">Gold, Silver, Bronze & Merit ranks in IMO, NSO & IEO</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-number">85<span class="stat-accent">+</span></div>
+          <div class="stat-title">Expert Mentors</div>
+          <div class="stat-caption">IIT, IISc and university alumni educators</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-number">18<span class="stat-accent">+</span></div>
+          <div class="stat-title">Years of Excellence</div>
+          <div class="stat-caption">Continuously refining concept-first pedagogy</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: Our Academic Philosophy -->
+  <section class="section section-soft">
+    <div class="container editorial-split">
+      <div>
+        <span class="eyebrow">PEDAGOGICAL FOUNDATION</span>
+        <h2 style="margin-top:10px;">Developing Conceptual Clarity Over Rote Learning</h2>
+        <p style="margin-top:16px;">
+          Competitive Olympiad examinations like IMO, NSO, and PRMO do not test memory; they evaluate structural mathematical thinking, hypothesis testing, and the ability to solve unfamiliar problems under time pressure.
+        </p>
+        <p style="margin-top:12px;">
+          Our academic model moves students systematically through intuition, visualization, mathematical proofs, and timed practice, ensuring that foundational concepts remain crystalline for life.
+        </p>
+        <div class="pillar-list">
+          <div class="pillar-item">
+            <h4>First-Principles Thinking</h4>
+            <p>Deconstructing complex multi-step problems into fundamental arithmetic, geometric, and scientific laws.</p>
+          </div>
+          <div class="pillar-item">
+            <h4>Pattern Recognition</h4>
+            <p>Cultivating acute perceptual instincts to identify underlying algebraic and non-verbal logic structures.</p>
+          </div>
+          <div class="pillar-item">
+            <h4>Diagnostic Precision</h4>
+            <p>Weekly granular tracking identifies knowledge gaps before they impact competitive performance.</p>
+          </div>
+          <div class="pillar-item">
+            <h4>Exam Temperament</h4>
+            <p>Building composed examination psychology through simulated full-length Olympiad environments.</p>
+          </div>
+        </div>
+        <div style="margin-top:24px;">
+          <a href="methodology.html" class="btn btn-outline btn-sm">Discover Our Teaching Methodology →</a>
+        </div>
+      </div>
+      <div>
+        <div class="editorial-img-box">
+          <img src="images/image-4.png" alt="Faculty demonstrating linear equation principles on whiteboard in seminar room">
+          <div class="editorial-caption-bar">
+            <span>Faculty-Led Conceptual Derivation</span>
+            <small style="color:var(--orange);">Linear Systems & Functional Models</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: Explore Our Olympiad Programs (STRICT 4 CARDS) -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head-split">
+        <div class="section-head">
+          <span class="eyebrow">TARGETED CURRICULA</span>
+          <h2>Explore Our Four Olympiad Programs</h2>
+          <p>Carefully calibrated training modules designed to prepare young scholars for prestigious national and international competitions.</p>
+        </div>
+        <a href="programs.html" class="btn btn-outline btn-sm">View Comprehensive Catalogue →</a>
+      </div>
+
+      <div class="grid-2x2">
+        <!-- Card 1: Mathematics -->
+        <article class="program-card">
+          <div class="program-card-media">
+            <span class="card-grade-pill">Grades 1 – 10</span>
+            <img src="images/image-13.png" alt="Students solving geometry problems with compass and angle tools at desk">
+          </div>
+          <div class="program-card-body">
+            <h3>Mathematics Olympiad</h3>
+            <p>Master number theory, combinatorial puzzles, coordinate geometry, and algebraic equations tested in IMO, PRMO, and NMTC.</p>
+            <div class="tag-row">
+              <span class="topic-tag">Arithmetic & Proofs</span>
+              <span class="topic-tag">Euclidean Geometry</span>
+              <span class="topic-tag">Combinatorics</span>
+            </div>
+            <div class="card-footer-action">
+              <span style="font-size:0.83rem; font-weight:700; color:var(--text-muted);">Eligibility: Grades 1–10</span>
+              <a href="mathematics.html" class="btn-link">Explore Mathematics Program →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: Science -->
+        <article class="program-card">
+          <div class="program-card-media">
+            <span class="card-grade-pill">Grades 3 – 10</span>
+            <img src="images/image-52.png" alt="Students conducting hands-on electronics and STEM experiment with mentor">
+          </div>
+          <div class="program-card-body">
+            <h3>Science Olympiad</h3>
+            <p>Hands-on experimental physics, fundamental chemistry reactions, and biological systems for NSO, NSEJS, and IJSO.</p>
+            <div class="tag-row">
+              <span class="topic-tag">Mechanics & Optics</span>
+              <span class="topic-tag">Chemical Bonding</span>
+              <span class="topic-tag">Cellular Biology</span>
+            </div>
+            <div class="card-footer-action">
+              <span style="font-size:0.83rem; font-weight:700; color:var(--text-muted);">Eligibility: Grades 3–10</span>
+              <a href="science.html" class="btn-link">Explore Science Program →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: Reasoning -->
+        <article class="program-card">
+          <div class="program-card-media">
+            <span class="card-grade-pill">Grades 1 – 10</span>
+            <img src="images/image-5.png" alt="Intense student collaborative problem-solving on reasoning challenge paper">
+          </div>
+          <div class="program-card-body">
+            <h3>Logical Reasoning & Aptitude</h3>
+            <p>Systematic deduction, spatial rotation, syllogisms, coding-decoding, and verbal logic essential for high-percentile ranks.</p>
+            <div class="tag-row">
+              <span class="topic-tag">Matrix Puzzles</span>
+              <span class="topic-tag">Spatial Relations</span>
+              <span class="topic-tag">Critical Deduction</span>
+            </div>
+            <div class="card-footer-action">
+              <span style="font-size:0.83rem; font-weight:700; color:var(--text-muted);">Eligibility: Grades 1–10</span>
+              <a href="reasoning.html" class="btn-link">Explore Reasoning Program →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4: English -->
+        <article class="program-card">
+          <div class="program-card-media">
+            <span class="card-grade-pill">Grades 1 – 10</span>
+            <img src="images/image-14.png" alt="Young students reading and discussing Olympiad curriculum book together">
+          </div>
+          <div class="program-card-body">
+            <h3>English Olympiad (IEO)</h3>
+            <p>Advanced lexical acquisition, contextual grammar nuance, critical reading comprehension, and communicative reasoning.</p>
+            <div class="tag-row">
+              <span class="topic-tag">Grammar Mastery</span>
+              <span class="topic-tag">Lexical Depth</span>
+              <span class="topic-tag">Analytical Reading</span>
+            </div>
+            <div class="card-footer-action">
+              <span style="font-size:0.83rem; font-weight:700; color:var(--text-muted);">Eligibility: Grades 1–10</span>
+              <a href="english.html" class="btn-link">Explore English Program →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: The Foundation Learning Journey (Connected Timeline) -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">ROADMAP TO EXCELLENCE</span>
+        <h2>The 5-Stage Foundation Learning Journey</h2>
+        <p>A proven, structured academic sequence taking students from foundational understanding to composed Olympiad readiness.</p>
+      </div>
+
+      <div class="journey-track">
+        <div class="journey-node">
+          <div class="journey-step-circle">01</div>
+          <h4>Concept Building</h4>
+          <p>Unpacking core principles through visual derivations and teacher-guided inquiry.</p>
+        </div>
+        <div class="journey-node">
+          <div class="journey-step-circle">02</div>
+          <h4>Guided Practice</h4>
+          <p>Solving graded problem sets with step-by-step mentor feedback on methodology.</p>
+        </div>
+        <div class="journey-node">
+          <div class="journey-step-circle">03</div>
+          <h4>Mock Assessments</h4>
+          <p>Timed, exam-calibrated test papers mirroring actual Olympiad competition constraints.</p>
+        </div>
+        <div class="journey-node">
+          <div class="journey-step-circle">04</div>
+          <h4>Performance Analysis</h4>
+          <p>Granular metric breakdown of question accuracy, speed, and conceptual blind spots.</p>
+        </div>
+        <div class="journey-node">
+          <div class="journey-step-circle">05</div>
+          <h4>Olympiad Readiness</h4>
+          <p>Strategic test temperament, shortcut verification, and national competition mastery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: Meet Our Academic Achievers (STRICT 4 CARDS) -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head-split">
+        <div class="section-head">
+          <span class="eyebrow">MEASURABLE STUDENT OUTCOMES</span>
+          <h2>Meet Our Academic Achievers</h2>
+          <p>Celebrating young scholars who transformed disciplined practice into national podium finishes.</p>
+        </div>
+        <a href="results.html" class="btn btn-outline btn-sm">View Full Results & Medals →</a>
+      </div>
+
+      <div class="grid-2x2">
+        <!-- Achiever 1 -->
+        <div class="achiever-card">
+          <div class="achiever-photo">
+            <img src="images/image-57.png" alt="Aarav Sharma receiving citation certificate at school ceremony">
+          </div>
+          <div class="achiever-content">
+            <span class="achiever-rank">All-India Rank 04 • Gold Medalist</span>
+            <h3 style="margin-top:4px;">Aarav Sharma</h3>
+            <div class="achiever-meta">International Mathematics Olympiad (IMO) • Grade 6</div>
+            <p style="font-size:0.88rem; margin-top:8px;">
+              "Pragyan's geometry visualization sessions taught me to break down non-standard polygons that typically baffle middle schoolers."
+            </p>
+          </div>
+        </div>
+
+        <!-- Achiever 2 -->
+        <div class="achiever-card">
+          <div class="achiever-photo">
+            <img src="images/image-58.png" alt="Ananya Sen receiving gold medal with IEO certificate">
+          </div>
+          <div class="achiever-content">
+            <span class="achiever-rank">International Rank 02 • Trophy</span>
+            <h3 style="margin-top:4px;">Ananya Sen</h3>
+            <div class="achiever-meta">International English Olympiad (IEO) • Grade 8</div>
+            <p style="font-size:0.88rem; margin-top:8px;">
+              "The vocabulary etymology modules gave me confidence to analyze convoluted comprehension passages in half the regular time."
+            </p>
+          </div>
+        </div>
+
+        <!-- Achiever 3 -->
+        <div class="achiever-card">
+          <div class="achiever-photo">
+            <img src="images/image-59.png" alt="Riddhi Verma receiving honor medal on academic stage">
+          </div>
+          <div class="achiever-content">
+            <span class="achiever-rank">State Rank 01 • Silver Medalist</span>
+            <h3 style="margin-top:4px;">Riddhi Verma</h3>
+            <div class="achiever-meta">National Science Olympiad (NSO) • Grade 5</div>
+            <p style="font-size:0.88rem; margin-top:8px;">
+              "Doing real hands-on circuit experiments in the lab made the physics electromagnetism questions simple and intuitive."
+            </p>
+          </div>
+        </div>
+
+        <!-- Achiever 4 -->
+        <div class="achiever-card">
+          <div class="achiever-photo">
+            <img src="images/image-60.png" alt="Pragyan student delegation celebrating with winning trophies">
+          </div>
+          <div class="achiever-content">
+            <span class="achiever-rank">Zonal Championship Trophy</span>
+            <h3 style="margin-top:4px;">Pragyan Foundation Cohort</h3>
+            <div class="achiever-meta">National Talent Search & PRMO Delegation • Grade 10</div>
+            <p style="font-size:0.88rem; margin-top:8px;">
+              "Over 92% of our batch qualified for Stage 2 competitive Olympiads, establishing record institutional performance."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: Why Parents Choose Our Academy (6 Icon-Based Benefits, Non-Card) -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">INSTITUTIONAL MERIT</span>
+        <h2>Why Parents Choose Our Academy</h2>
+        <p>A structured academic ecosystem designed to nurture intellectual curiosity, discipline, and measurable performance.</p>
+      </div>
+
+      <div class="benefits-icon-grid">
+        <div class="benefit-row">
+          <div class="benefit-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <div>
+            <h4>Concept-Based Learning</h4>
+            <p>We eradicate formula cramming through visual derivations and fundamental principles from day one.</p>
+          </div>
+        </div>
+
+        <div class="benefit-row">
+          <div class="benefit-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div>
+            <h4>Experienced Faculty</h4>
+            <p>Mentored exclusively by subject specialists with proven track records in national Olympiad training.</p>
+          </div>
+        </div>
+
+        <div class="benefit-row">
+          <div class="benefit-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <div>
+            <h4>Grade-Wise Curriculum</h4>
+            <p>Custom pedagogies tailored specifically for primary (1–3), middle (4–6), and secondary (7–10) stages.</p>
+          </div>
+        </div>
+
+        <div class="benefit-row">
+          <div class="benefit-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div>
+            <h4>Regular Assessments</h4>
+            <p>Bi-weekly topic evaluations and monthly full-length benchmark tests calibrated to national percentiles.</p>
+          </div>
+        </div>
+
+        <div class="benefit-row">
+          <div class="benefit-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <div>
+            <h4>Individual Tracking</h4>
+            <p>Digital analytics track accuracy, speed per question, and conceptual weaknesses for each enrolled scholar.</p>
+          </div>
+        </div>
+
+        <div class="benefit-row">
+          <div class="benefit-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div>
+            <h4>Parent Progress Updates</h4>
+            <p>Structured monthly reports and personalized parent-educator conferences to align home and academy efforts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: Our Teaching Environment (Asymmetric Gallery) -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head-split">
+        <div class="section-head">
+          <span class="eyebrow">WORLD-CLASS INFRASTRUCTURE</span>
+          <h2>Inside Our Teaching Environment</h2>
+          <p>Step inside our purpose-built coaching halls, doubt resolution clinics, and student counseling centers.</p>
+        </div>
+        <a href="about.html" class="btn btn-outline btn-sm">Explore Academic Facilities →</a>
+      </div>
+
+      <div class="asymmetric-gallery">
+        <div class="gallery-tile gallery-tile-tall">
+          <img src="images/image-17.png" alt="Spacious university-style coaching classroom with faculty addressing students">
+          <div class="gallery-caption">
+            <span>Modern Lecture Theater</span>
+            <strong>Tiered High-Engagement Academic Lecture Amphitheater</strong>
+          </div>
+        </div>
+        <div class="gallery-right-stack">
+          <div class="gallery-tile gallery-tile-sub">
+            <img src="images/image-16.png" alt="Dedicated teacher helping individual student at study desk">
+            <div class="gallery-caption">
+              <span>Personalized Support</span>
+              <strong>Desk-Side Doubt Resolution Session</strong>
+            </div>
+          </div>
+          <div class="gallery-tile gallery-tile-sub">
+            <img src="images/image-18.png" alt="Parent academic counseling desk with institute counselors">
+            <div class="gallery-caption">
+              <span>Parent Partnership</span>
+              <strong>Academic Counseling & Admissions Center</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 9: Parent Testimonials (Interactive Spotlight) -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">PARENT PERSPECTIVE</span>
+        <h2>Trusted by Parents Across the Country</h2>
+        <p>Honest feedback on how our structured Olympiad training elevated their child's academic confidence.</p>
+      </div>
+
+      <div class="testimonial-stage">
+        <div class="testimonial-spotlight">
+          <div>
+            <div class="testimonial-quote-mark">“</div>
+            <p class="testimonial-quote-text" id="spotlightQuote">
+              Pragyan transformed the way my son looks at mathematics. He stopped dreading word problems and now participates enthusiastically in regional math camps. The faculty treats every doubt with genuine academic respect.
+            </p>
+          </div>
+          <div class="testimonial-author-row">
+            <div>
+              <strong style="display:block; font-size:1.05rem;" id="spotlightAuthor">Dr. Meenakshi Sundaram</strong>
+              <span style="font-size:0.84rem; color:var(--text-on-dark-muted);" id="spotlightMeta">Parent of Rohan (Grade 7 Olympiad Scholar)</span>
+            </div>
+            <div class="demo-badge">Verified Parent Testimonial</div>
+          </div>
+        </div>
+
+        <div class="testimonial-selector-list">
+          <button class="testimonial-tab is-active" data-quote="Pragyan transformed the way my son looks at mathematics. He stopped dreading word problems and now participates enthusiastically in regional math camps. The faculty treats every doubt with genuine academic respect." data-author="Dr. Meenakshi Sundaram" data-meta="Parent of Rohan (Grade 7 Olympiad Scholar)">
+            <div>
+              <strong>Dr. Meenakshi Sundaram</strong>
+              <span>Parent of Grade 7 Student</span>
+            </div>
+            <span style="color:var(--orange); font-weight:800;">→</span>
+          </button>
+
+          <button class="testimonial-tab" data-quote="The weekly diagnostic analytics gave us complete visibility into Diya's logical reasoning progress. Unlike ordinary coaching classes, Pragyan focuses on depth, speed techniques, and conceptual clarity." data-author="Rajeshwar Rao" data-meta="Parent of Diya (Grade 5 Silver Medalist)">
+            <div>
+              <strong>Rajeshwar Rao</strong>
+              <span>Parent of Grade 5 Student</span>
+            </div>
+            <span style="color:var(--orange); font-weight:800;">→</span>
+          </button>
+
+          <button class="testimonial-tab" data-quote="My daughter used to be intimidated by physics numericals in middle school. The practical experiments and visual diagrams in Pragyan's Science Olympiad module completely shifted her perspective." data-author="Sunita Chawla" data-meta="Parent of Kriti (Grade 8 NSO Achiever)">
+            <div>
+              <strong>Sunita Chawla</strong>
+              <span>Parent of Grade 8 Student</span>
+            </div>
+            <span style="color:var(--orange); font-weight:800;">→</span>
+          </button>
+
+          <button class="testimonial-tab" data-quote="The discipline and analytical habits instilled here extend far beyond Olympiad exams. It reflects directly in my son's school performance and his critical thinking skills." data-author="Vikramaditya Pant" data-meta="Parent of Shaurya (Grade 10 Scholar)">
+            <div>
+              <strong>Vikramaditya Pant</strong>
+              <span>Parent of Grade 10 Student</span>
+            </div>
+            <span style="color:var(--orange); font-weight:800;">→</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 10: Final Admission CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-band">
+        <div>
+          <span class="eyebrow" style="color:var(--orange);">ENROLLMENT ADMISSIONS 2026–27</span>
+          <h2 style="margin-top:8px;">Begin Your Child's Journey to Academic Mastery</h2>
+          <p style="max-width:620px;">
+            Schedule an academic diagnostic evaluation today to identify your child's Olympiad aptitude and place them in the optimal grade-wise training cohort.
+          </p>
+        </div>
+        <div class="btn-group" style="flex-shrink:0;">
+          <a href="contact.html" class="btn btn-primary">Book Diagnostic Evaluation →</a>
+          <a href="grades.html" class="btn btn-outline-light">Explore Grade Pathways</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-logo" style="margin-bottom:16px;">
+            <img src="images/logo.png" alt="Pragyan Olympiad Academy Logo" class="brand-logo-img" style="height:44px; width:auto;">
+            <div class="brand-logo-text">
+              <span class="brand-name" style="color:var(--white);">PRAGYAN</span>
+              <span class="brand-sub">Olympiad Academy</span>
+            </div>
+          </div>
+          <p style="font-size:0.88rem; line-height:1.65; margin-bottom:16px;">
+            A premier academic coaching institute specializing in Mathematics Olympiad, Science Olympiad, Logical Reasoning, and competitive foundation training for Grades 1 through 10.
+          </p>
+          <div class="demo-badge">Verified Academic Curriculum Framework</div>
+          <div class="footer-social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram" title="Follow us on Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook" title="Follow us on Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="X (Twitter)" title="Follow us on X">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+              </svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="YouTube" title="Subscribe on YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"></polygon>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-heading">Olympiad Programs</div>
+          <ul class="footer-links">
+            <li><a href="mathematics.html">Mathematics Olympiad (IMO / NMTC)</a></li>
+            <li><a href="science.html">Science Olympiad (NSO / IJSO)</a></li>
+            <li><a href="reasoning.html">Logical Reasoning & Mental Ability</a></li>
+            <li><a href="english.html">English Olympiad (IEO)</a></li>
+            <li><a href="grades.html">Grade-Wise Learning (1–10)</a></li>
+            <li><a href="methodology.html">Concept-Based Methodology</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-heading">Student & Parents</div>
+          <ul class="footer-links">
+            <li><a href="results.html">Results & Medal Achievers</a></li>
+            <li><a href="success-stories.html">Student Success Stories</a></li>
+            <li><a href="faculty.html">Distinguished Faculty</a></li>
+            <li><a href="resources.html">Study Worksheets & Papers</a></li>
+            <li><a href="dashboard.html">Student Learning Portal</a></li>
+            <li><a href="practice-tests.html">Online Mock Test Engine</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-heading">Academic Centers</div>
+          <p style="font-size:0.86rem; color:var(--text-on-dark-muted); margin-bottom:12px;">
+            <strong>National Headquarters:</strong><br>
+            Pragyan Tower, 42 Institutional Enclave, South Campus Road, New Delhi 110049
+          </p>
+          <p style="font-size:0.86rem; color:var(--text-on-dark-muted); margin-bottom:16px;">
+            <strong>Enquiry Helpline:</strong> +91 (011) 4920-8800<br>
+            <strong>Admissions Email:</strong> admissions@pragyanolympiad.edu.in
+          </p>
+          <a href="contact.html" class="btn btn-outline-light btn-sm">Schedule Campus Visit →</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Pragyan Olympiad Foundation Coaching Center. All rights reserved. Professional Academic Portal.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="about.html">About Institution</a>
+          <a href="contact.html">Privacy & Academic Standards</a>
+          <a href="login.html">Student Portal Login</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+  
+
+  <!-- DROP TO TOP (SCROLL TO TOP) BUTTON -->
+  <button type="button" id="backToTopBtn" class="back-to-top-btn" aria-label="Scroll to top" title="Drop to top">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+</body>
+</html>

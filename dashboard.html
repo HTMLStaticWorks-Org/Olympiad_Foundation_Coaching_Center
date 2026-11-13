@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard | Pragyan Olympiad Academy</title>
+  <meta name="description" content="Premier Olympiad Foundation Coaching Center specializing in Mathematics, Science, Logical Reasoning, and English competitive exam training.">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem('pragyan_theme');
+        if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+        var d = localStorage.getItem('pragyan_dir');
+        if (d === 'rtl') {
+          document.documentElement.setAttribute('dir', 'rtl');
+        }
+      } catch(e) {}
+    })();
+  </script>
+</head>
+<body class="standalone-portal">
+
+
+  <div class="portal-mobile-bar">
+    <div style="display:flex; align-items:center; gap:10px;">
+      <img src="images/logo.png" alt="Pragyan Olympiad Academy Logo" style="height:34px; width:auto; max-width:50px; object-fit:contain;">
+      <span style="font-weight:700; font-size:0.95rem;">Pragyan Portal</span>
+    </div>
+    <button class="portal-sidebar-toggle btn btn-sm btn-outline-light" aria-label="Toggle navigation menu">Menu</button>
+  </div>
+
+  <div class="portal-shell">
+    <!-- DASHBOARD SIDEBAR -->
+    <aside class="portal-sidebar" aria-label="Dashboard Sidebar">
+      <!-- Portal Brand Header -->
+      <div style="padding: 4px 6px 14px; border-bottom: 1px solid rgba(255, 255, 255, 0.12); margin-bottom: 12px;">
+        <a href="index.html" class="brand-logo" style="text-decoration:none; display:inline-flex; align-items:center; gap:10px;">
+          <img src="images/logo.png" alt="Pragyan Olympiad Academy Logo" class="portal-brand-logo-img">
+          <div class="brand-text">
+            <span class="brand-title" style="color:#FFFFFF; font-size:1rem; font-weight:800; letter-spacing:0.5px;">PRAGYAN</span>
+            <span class="brand-sub" style="font-size:0.62rem; color:var(--text-on-dark-muted); display:block; letter-spacing:0.3px;">STUDENT PORTAL</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="portal-student-mini">
+        <strong>Rohan Sundaram</strong>
+        <span>Grade 8 • IMO & NSO Scholar</span>
+        <div style="font-size:0.75rem; color:var(--text-on-dark-muted); margin-top:2px;">ID: PRAG-2026-4409</div>
+      </div>
+
+      <!-- IN-PAGE NAVIGATION (Displays related section inside dashboard) -->
+      <nav style="display:flex; flex-direction:column; gap:4px;" class="portal-nav-group">
+        <a href="#overview" class="portal-nav-link is-active" data-tab="overview">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          <span>Overview</span>
+        </a>
+        <a href="#programs" class="portal-nav-link" data-tab="programs">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          <span>My Programs</span>
+        </a>
+        <a href="#practice-tests" class="portal-nav-link" data-tab="practice-tests">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          <span>Practice Tests</span>
+        </a>
+        <a href="#performance" class="portal-nav-link" data-tab="performance">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          <span>My Results & Analytics</span>
+        </a>
+        <a href="#resources" class="portal-nav-link" data-tab="resources">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          <span>Study Resources</span>
+        </a>
+        <a href="#schedule" class="portal-nav-link" data-tab="schedule">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>Class Schedule</span>
+        </a>
+        <a href="#mentor-support" class="portal-nav-link" data-tab="mentor-support">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <span>Mentor Support</span>
+        </a>
+      </nav>
+
+      <!-- SIDEBAR FOOTER: Settings (Theme & RTL) above, Logout down -->
+      <div class="portal-sidebar-footer">
+        <div class="portal-settings-row">
+          <span style="font-size:0.75rem; color:var(--text-on-dark-muted); text-transform:uppercase; letter-spacing:0.5px; font-weight:700;">Theme & Direction</span>
+          <div style="display:flex; align-items:center; gap:8px;">
+            <!-- Theme Toggle Button -->
+            <button type="button" class="nav-icon-btn theme-toggle" aria-label="Toggle Theme" title="Toggle Light / Dark Theme" style="width:34px; height:34px; border-radius:8px; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.14); color:#FFFFFF; display:inline-flex; align-items:center; justify-content:center; cursor:pointer;">
+              <svg class="theme-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+            <!-- RTL Toggle Button -->
+            <button type="button" class="nav-icon-btn rtl-toggle" aria-label="Toggle Text Direction" title="Switch Text Direction (RTL / LTR)" style="width:34px; height:34px; border-radius:8px; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.14); color:#FFFFFF; display:inline-flex; align-items:center; justify-content:center; cursor:pointer;">
+              <svg class="rtl-icon-svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M16 3l4 4-4 4"/><path d="M20 17H4M8 13l-4 4 4 4"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Logout Button (Down, navigating to Home 1: index.html) -->
+        <a href="index.html" class="portal-nav-link portal-logout-btn" title="Logout and return to Home 1">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+          <span>Logout</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- MAIN DASHBOARD CONTENT AREA (Contains all 7 tab sections inside dashboard) -->
+    <main class="portal-main">
+
+      <!-- ===================================================================
+           TAB 1: OVERVIEW (Active Default)
+           =================================================================== -->
+      <section id="tab-overview" class="portal-tab-content is-active" aria-label="Overview Dashboard">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:16px; margin-bottom:28px;">
+          <div>
+            <div class="demo-badge">STUDENT LEARNING DASHBOARD</div>
+            <h1 style="margin-top:6px; font-size:1.9rem;">Welcome back, Rohan!</h1>
+            <p style="font-size:0.92rem; color:var(--text-muted);">You have completed 18 of 24 planned foundation milestones for this term.</p>
+          </div>
+          <div style="display:flex; align-items:center; gap:12px; margin-top:4px;">
+            <button type="button" class="btn btn-primary btn-sm" data-tab-target="practice-tests" onclick="switchDashboardTab('practice-tests'); return false;" style="cursor:pointer;">Launch Mock Test →</button>
+            <button type="button" class="btn btn-outline btn-sm" data-tab-target="schedule" onclick="switchDashboardTab('schedule'); return false;" style="cursor:pointer;">View Timetable</button>
+          </div>
+        </div>
+
+        <!-- 4 KPI WIDGETS -->
+        <div class="kpi-grid-4">
+          <div class="kpi-widget">
+            <div class="kpi-val">18</div>
+            <div class="kpi-lbl">Tests Attempted</div>
+            <div class="progress-track"><div class="progress-fill" style="width:75%;"></div></div>
+          </div>
+          <div class="kpi-widget">
+            <div class="kpi-val">89.4%</div>
+            <div class="kpi-lbl">Overall Accuracy</div>
+            <div class="progress-track"><div class="progress-fill" style="width:89%;"></div></div>
+          </div>
+          <div class="kpi-widget">
+            <div class="kpi-val">98.2</div>
+            <div class="kpi-lbl">National Percentile</div>
+            <div class="progress-track"><div class="progress-fill" style="width:98%;"></div></div>
+          </div>
+          <div class="kpi-widget">
+            <div class="kpi-val">14 Days</div>
+            <div class="kpi-lbl">Daily Practice Streak</div>
+            <div class="progress-track"><div class="progress-fill" style="width:90%;"></div></div>
+          </div>
+        </div>
+
+        <!-- SUBJECT PERFORMANCE CARDS -->
+        <div style="margin-bottom:28px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; flex-wrap:wrap; gap:10px;">
+            <h3 style="font-size:1.25rem;">Subject-Wise Performance Breakdown</h3>
+            <select id="dashboardSubjectFilter" class="filter-select">
+              <option value="all">All 4 Subjects</option>
+              <option value="math">Mathematics Only</option>
+              <option value="science">Science Only</option>
+              <option value="reasoning">Logical Reasoning Only</option>
+              <option value="english">English Only</option>
+            </select>
+          </div>
+
+          <div class="grid-2x2">
+            <div class="portal-panel subject-kpi-card" data-subject="math">
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <strong>Mathematics Olympiad</strong>
+                <span style="font-family:var(--font-display); font-weight:800; color:var(--orange-deep);">94.0%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width:94%;"></div></div>
+              <p style="font-size:0.83rem; color:var(--text-muted); margin-top:8px;">
+                Mastered: Euclidean Geometry, Polynomial Roots. Focus: Modulo Arithmetic speed.
+              </p>
+            </div>
+
+            <div class="portal-panel subject-kpi-card" data-subject="science">
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <strong>Science Olympiad</strong>
+                <span style="font-family:var(--font-display); font-weight:800; color:var(--orange-deep);">88.5%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width:88%;"></div></div>
+              <p style="font-size:0.83rem; color:var(--text-muted); margin-top:8px;">
+                Mastered: Ray Optics, Chemical Equations. Focus: Projectile kinematics vectors.
+              </p>
+            </div>
+
+            <div class="portal-panel subject-kpi-card" data-subject="reasoning">
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <strong>Logical Reasoning</strong>
+                <span style="font-family:var(--font-display); font-weight:800; color:var(--orange-deep);">92.2%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width:92%;"></div></div>
+              <p style="font-size:0.83rem; color:var(--text-muted); margin-top:8px;">
+                Mastered: Matrix Grids, Cube Folding. Focus: Syllogistic deduction.
+              </p>
+            </div>
+
+            <div class="portal-panel subject-kpi-card" data-subject="english">
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <strong>English Olympiad (IEO)</strong>
+                <span style="font-family:var(--font-display); font-weight:800; color:var(--orange-deep);">84.0%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width:84%;"></div></div>
+              <p style="font-size:0.83rem; color:var(--text-muted); margin-top:8px;">
+                Mastered: Reading speed. Focus: Etymological prefixes & Greek roots.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- UPCOMING TESTS & RECENT RESULTS SPLIT -->
+        <div class="dashboard-split">
+          <div class="portal-panel">
+            <h3 style="font-size:1.15rem; margin-bottom:14px;">Upcoming Practice Tests</h3>
+            <div class="table-wrap">
+              <table class="academic-table" style="min-width:480px;">
+                <thead>
+                  <tr>
+                    <th>Test Title</th>
+                    <th>Date & Time</th>
+                    <th>Duration</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>All-India IMO Mock #05</strong></td>
+                    <td>Nov 15, 2026 • 10:00 AM</td>
+                    <td>60 Mins</td>
+                    <td><button type="button" class="btn btn-primary btn-sm" data-tab-target="practice-tests" onclick="switchDashboardTab('practice-tests'); return false;" style="cursor:pointer;">Start Test</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Physics Kinematics Sprint</strong></td>
+                    <td>Nov 18, 2026 • 04:30 PM</td>
+                    <td>45 Mins</td>
+                    <td><button type="button" class="btn btn-outline btn-sm" data-tab-target="practice-tests" onclick="switchDashboardTab('practice-tests'); return false;" style="cursor:pointer;">Register</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Mental Ability Benchmark 3</strong></td>
+                    <td>Nov 22, 2026 • 11:00 AM</td>
+                    <td>50 Mins</td>
+                    <td><button type="button" class="btn btn-outline btn-sm" data-tab-target="practice-tests" onclick="switchDashboardTab('practice-tests'); return false;" style="cursor:pointer;">Register</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="portal-panel">
+            <h3 style="font-size:1.15rem; margin-bottom:14px;">Recent Notifications</h3>
+            <div style="display:flex; flex-direction:column; gap:10px;">
+              <div style="padding:10px 12px; border-radius:6px; background-color:var(--bg-soft); border-left:3px solid var(--orange);">
+                <strong style="font-size:0.88rem; display:block;">PRMO Doubt Clinic Added</strong>
+                <span style="font-size:0.78rem; color:var(--text-muted);">Prof. Namboodiri live session: Friday 5:00 PM</span>
+              </div>
+              <div style="padding:10px 12px; border-radius:6px; background-color:var(--bg-soft); border-left:3px solid var(--black);">
+                <strong style="font-size:0.88rem; display:block;">IMO Mock #04 Scores Released</strong>
+                <span style="font-size:0.78rem; color:var(--text-muted);">You ranked #4 in Delhi Zonal Batch (56/60).</span>
+              </div>
+              <div style="padding:10px 12px; border-radius:6px; background-color:var(--bg-soft); border-left:3px solid var(--grey-mid);">
+                <strong style="font-size:0.88rem; display:block;">New Worksheets Uploaded</strong>
+                <span style="font-size:0.78rem; color:var(--text-muted);">Coordinate Geometry Level 3 challenge bank.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           TAB 2: MY PROGRAMS (In-Page View)
+           =================================================================== -->
+      <section id="tab-programs" class="portal-tab-content" aria-label="My Enrolled Programs">
+        <div style="margin-bottom:28px;">
+          <div class="demo-badge">ACADEMIC ENROLLMENTS</div>
+          <h1 style="margin-top:6px; font-size:1.9rem;">My Enrolled Academic Programs</h1>
+          <p style="font-size:0.92rem; color:var(--text-muted);">Manage your active curriculum tracks, syllabus milestones, and faculty cohort batches for 2026.</p>
+        </div>
+
+        <!-- ENROLLMENT METRICS -->
+        <div class="kpi-grid-4">
+          <div class="kpi-widget">
+            <div class="kpi-val">4 Programs</div>
+            <div class="kpi-lbl">Active Enrolled Tracks</div>
+            <div class="progress-track"><div class="progress-fill" style="width:100%;"></div></div>
+          </div>
+          <div class="kpi-widget">
+            <div class="kpi-val">78.5%</div>
+            <div class="kpi-lbl">Avg Syllabus Progress</div>
+            <div class="progress-track"><div class="progress-fill" style="width:78%;"></div></div>
+          </div>
+          <div class="kpi-widget">
+            <div class="kpi-val">4 Mentors</div>
+            <div class="kpi-lbl">Assigned Faculty Leads</div>
+            <div class="progress-track"><div class="progress-fill" style="width:100%;"></div></div>
+          </div>
+          <div class="kpi-widget">
+            <div class="kpi-val">Dec 12</div>
+            <div class="kpi-lbl">Next Term Evaluation</div>
+            <div class="progress-track"><div class="progress-fill" style="width:65%;"></div></div>
+          </div>
+        </div>
+
+        <!-- 4 PROGRAM CARDS -->
+        <div class="grid-2x2">
+          <!-- Program 1 -->
+          <div class="portal-panel" style="display:flex; flex-direction:column; justify-content:space-between; gap:16px;">
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <span class="badge" style="background:rgba(255,94,14,0.12); color:var(--orange-deep); font-weight:700;">PRIMARY OLYMPIAD TRACK</span>
+                <span style="font-size:0.75rem; color:var(--text-muted);">Batch #DEL-2026-M8</span>
+              </div>
+              <h3 style="font-size:1.25rem;">PRMO & Pre-RMO Foundation Batch (Grade 8 Elite)</h3>
+              <p style="font-size:0.86rem; color:var(--text-muted); margin-top:6px;">
+                Rigorous mathematical proof constructions, non-routine Euclidean geometry, Diophantine equations, and polynomial roots.
+              </p>
+              <div style="margin-top:14px; font-size:0.82rem; color:var(--text-muted);">
+                <strong>Mentor Lead:</strong> Prof. R. K. Namboodiri (IIT Bombay • 22 Yrs Exp)<br>
+                <strong>Timings:</strong> Mon & Thu • 5:00 PM – 6:30 PM (Aryabhata Amphitheatre)
+              </div>
+              <div style="margin-top:14px;">
+                <div style="display:flex; justify-content:space-between; font-size:0.8rem; margin-bottom:4px;">
+                  <span>Syllabus Coverage</span>
+                  <strong>78% (22/28 Modules)</strong>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width:78%;"></div></div>
+              </div>
+            </div>
+            <div style="display:flex; gap:10px; padding-top:12px; border-top:1px solid var(--grey-light);">
+              <button type="button" class="btn btn-primary btn-sm" data-tab-target="practice-tests">Practice Math Mock →</button>
+              <button type="button" class="btn btn-outline btn-sm" data-tab-target="resources">Module Notes</button>
+            </div>
+          </div>
+
+          <!-- Program 2 -->
+          <div class="portal-panel" style="display:flex; flex-direction:column; justify-content:space-between; gap:16px;">
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <span class="badge" style="background:rgba(31,138,76,0.12); color:var(--success); font-weight:700;">SCIENCE SPECIALIZATION</span>
+                <span style="font-size:0.75rem; color:var(--text-muted);">Batch #DEL-2026-S8</span>
+              </div>
+              <h3 style="font-size:1.25rem;">NSO National Science Olympiad Accelerator</h3>
+              <p style="font-size:0.86rem; color:var(--text-muted); margin-top:6px;">
+                Conceptual mechanics, thin lens optics, kinetic equilibrium, reaction stoichiometry, and cellular biology diagnostics.
+              </p>
+              <div style="margin-top:14px; font-size:0.82rem; color:var(--text-muted);">
+                <strong>Mentor Lead:</strong> Dr. Suniti Banerjee (IISc Bangalore • 16 Yrs Exp)<br>
+                <strong>Timings:</strong> Tue • 5:00 PM – 6:30 PM (Raman Physics Lab)
+              </div>
+              <div style="margin-top:14px;">
+                <div style="display:flex; justify-content:space-between; font-size:0.8rem; margin-bottom:4px;">
+                  <span>Syllabus Coverage</span>
+                  <strong>65% (16/24 Modules)</strong>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width:65%;"></div></div>
+              </div>
+            </div>
+            <div style="display:flex; gap:10px; padding-top:12px; border-top:1px solid var(--grey-light);">
+              <button type="button" class="btn btn-primary btn-sm" data-tab-target="practice-tests">Practice Science Mock →</button>
+              <button type="button" class="btn btn-outline btn-sm" data-tab-target="resources">Module Notes</button>
+            </div>
+          </div>
+
+          <!-- Program 3 -->
+          <div class="portal-panel" style="display:flex; flex-direction:column; justify-content:space-between; gap:16px;">
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <span class="badge" style="background:rgba(217,119,6,0.12); color:var(--warning); font-weight:700;">SPEED & LOGIC BENCHMARK</span>
+                <span style="font-size:0.75rem; color:var(--text-muted);">Batch #PAN-2026-R8</span>
+              </div>
+              <h3 style="font-size:1.25rem;">Mental Ability & Logical Reasoning Masterclass</h3>
+              <p style="font-size:0.86rem; color:var(--text-muted); margin-top:6px;">
+                Non-verbal matrix grids, folding cubes, syllogistic deductions, algorithmic coding sequences, and speed puzzles.
+              </p>
+              <div style="margin-top:14px; font-size:0.82rem; color:var(--text-muted);">
+                <strong>Mentor Lead:</strong> Maheshwar Trivedi (Cognitive Psychology • 14 Yrs Exp)<br>
+                <strong>Timings:</strong> Wed • 4:30 PM – 6:00 PM (Turing Hall)
+              </div>
+              <div style="margin-top:14px;">
+                <div style="display:flex; justify-content:space-between; font-size:0.8rem; margin-bottom:4px;">
+                  <span>Syllabus Coverage</span>
+                  <strong>85% (17/20 Modules)</strong>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width:85%;"></div></div>
+              </div>
+            </div>
+            <div style="display:flex; gap:10px; padding-top:12px; border-top:1px solid var(--grey-light);">
+              <button type="button" class="btn btn-primary btn-sm" data-tab-target="practice-tests">Practice Logic Mock →</button>
+              <button type="button" class="btn btn-outline btn-sm" data-tab-target="resources">Module Notes</button>
+            </div>
+          </div>
+
+          <!-- Program 4 -->
+          <div class="portal-panel" style="display:flex; flex-direction:column; justify-content:space-between; gap:16px;">
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <span class="badge" style="background:rgba(0,102,204,0.12); color:#0066CC; font-weight:700;">LANGUAGE & SYNTAX</span>
+                <span style="font-size:0.75rem; color:var(--text-muted);">Batch #DEL-2026-E8</span>
+              </div>
+              <h3 style="font-size:1.25rem;">International English Olympiad (IEO) Achievers Sprint</h3>
+              <p style="font-size:0.86rem; color:var(--text-muted); margin-top:6px;">
+                Etymological vocabulary roots, syntactic grammar nuances, inferential reading speed, and spoken expression analysis.
+              </p>
+              <div style="margin-top:14px; font-size:0.82rem; color:var(--text-muted);">
+                <strong>Mentor Lead:</strong> Anuradha Sen Sharma (JNU Linguistics • 18 Yrs Exp)<br>
+                <strong>Timings:</strong> Sat • 11:30 AM – 1:00 PM (Seminar Room 2)
+              </div>
+              <div style="margin-top:14px;">
+                <div style="display:flex; justify-content:space-between; font-size:0.8rem; margin-bottom:4px;">
+                  <span>Syllabus Coverage</span>
+                  <strong>50% (10/20 Modules)</strong>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width:50%;"></div></div>
+              </div>
+            </div>
+            <div style="display:flex; gap:10px; padding-top:12px; border-top:1px solid var(--grey-light);">
+              <button type="button" class="btn btn-primary btn-sm" data-tab-target="practice-tests">Practice IEO Mock →</button>
+              <button type="button" class="btn btn-outline btn-sm" data-tab-target="resources">Module Notes</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           TAB 3: PRACTICE TESTS (In-Page View)
+           =================================================================== -->
+      <section id="tab-practice-tests" class="portal-tab-content" aria-label="Practice Tests and Mock Exams">
+        <div style="margin-bottom:28px;">
+          <div class="demo-badge">TEST SIMULATION & BENCHMARKS</div>
+          <h1 style="margin-top:6px; font-size:1.9rem;">Practice Tests & Mock Exam Workspace</h1>
+          <p style="font-size:0.92rem; color:var(--text-muted);">Attempt timed diagnostic tests, topic-level problem sets, and All-India level benchmarks.</p>
+        </div>
+
+        <!-- 4 LIVE / SCHEDULED MOCK TESTS -->
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:20px; margin-bottom:32px;">
+          <!-- Test 1 -->
+          <div class="portal-panel" style="border-top:3.5px solid var(--orange);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+              <span class="badge" style="background:rgba(255,94,14,0.14); color:var(--orange-deep); font-weight:700;">LIVE MOCK TEST</span>
+              <span style="font-size:0.78rem; color:var(--text-muted);">Tier 1 National</span>
+            </div>
+            <h3 style="font-size:1.15rem; margin-bottom:6px;">All-India IMO Mock Benchmark #05</h3>
+            <p style="font-size:0.84rem; color:var(--text-muted); margin-bottom:12px;">30 Non-Routine Olympiad Questions • Euclidean Geometry, Polynomials & Modulo Arithmetic.</p>
+            <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--text-muted); margin-bottom:14px; background:var(--bg-soft); padding:8px 12px; border-radius:6px;">
+              <span><strong>Duration:</strong> 60 Mins</span>
+              <span><strong>Marking:</strong> +3 / -1</span>
+              <span><strong>Questions:</strong> 30</span>
+            </div>
+            <button type="button" class="btn btn-primary btn-sm" style="width:100%;" onclick="alert('Starting All-India IMO Mock #05 exam simulation environment...');">Launch Test Environment →</button>
+          </div>
+
+          <!-- Test 2 -->
+          <div class="portal-panel" style="border-top:3.5px solid var(--success);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+              <span class="badge" style="background:rgba(31,138,76,0.14); color:var(--success); font-weight:700;">LIVE SCIENCE TEST</span>
+              <span style="font-size:0.78rem; color:var(--text-muted);">NSEJS Stage 1</span>
+            </div>
+            <h3 style="font-size:1.15rem; margin-bottom:6px;">NSEJS Physics Rapid Diagnostic #03</h3>
+            <p style="font-size:0.84rem; color:var(--text-muted); margin-bottom:12px;">25 Problems • Geometric Optics, Vector Kinematics & Energy Work Theorems.</p>
+            <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--text-muted); margin-bottom:14px; background:var(--bg-soft); padding:8px 12px; border-radius:6px;">
+              <span><strong>Duration:</strong> 45 Mins</span>
+              <span><strong>Marking:</strong> +4 / -1</span>
+              <span><strong>Questions:</strong> 25</span>
+            </div>
+            <button type="button" class="btn btn-primary btn-sm" style="width:100%;" onclick="alert('Starting NSEJS Physics Rapid Diagnostic #03 simulation environment...');">Launch Test Environment →</button>
+          </div>
+
+          <!-- Test 3 -->
+          <div class="portal-panel" style="border-top:3.5px solid var(--black);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+              <span class="badge" style="background:rgba(0,0,0,0.08); color:var(--black); font-weight:700;">TOPIC BENCHMARK</span>
+              <span style="font-size:0.78rem; color:var(--text-muted);">Mental Ability</span>
+            </div>
+            <h3 style="font-size:1.15rem; margin-bottom:6px;">Logical Reasoning Benchmark 4</h3>
+            <p style="font-size:0.84rem; color:var(--text-muted); margin-bottom:12px;">35 Matrix & Spatial Reasoning Benchmarks • Non-verbal figure analysis.</p>
+            <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--text-muted); margin-bottom:14px; background:var(--bg-soft); padding:8px 12px; border-radius:6px;">
+              <span><strong>Duration:</strong> 50 Mins</span>
+              <span><strong>Marking:</strong> +1 / 0</span>
+              <span><strong>Questions:</strong> 35</span>
+            </div>
+            <button type="button" class="btn btn-outline btn-sm" style="width:100%;" onclick="alert('Starting Logical Reasoning Benchmark 4...');">Take Benchmark →</button>
+          </div>
+
+          <!-- Test 4 -->
+          <div class="portal-panel" style="border-top:3.5px solid var(--grey-mid);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+              <span class="badge" style="background:rgba(0,102,204,0.12); color:#0066CC; font-weight:700;">SUBJECTIVE DRILL</span>
+              <span style="font-size:0.78rem; color:var(--text-muted);">PRMO Prep</span>
+            </div>
+            <h3 style="font-size:1.15rem; margin-bottom:6px;">PRMO Number Theory Problem Set B</h3>
+            <p style="font-size:0.84rem; color:var(--text-muted); margin-bottom:12px;">15 Deep Challenge Proofs • Modular arithmetic & Chinese Remainder Theorem.</p>
+            <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--text-muted); margin-bottom:14px; background:var(--bg-soft); padding:8px 12px; border-radius:6px;">
+              <span><strong>Duration:</strong> 45 Mins</span>
+              <span><strong>Marking:</strong> Subjective</span>
+              <span><strong>Questions:</strong> 15</span>
+            </div>
+            <button type="button" class="btn btn-outline btn-sm" style="width:100%;" onclick="alert('Starting PRMO Number Theory Problem Set B...');">Take Problem Set →</button>
+          </div>
+        </div>
+
+        <!-- PAST TEST RESULTS LOG -->
+        <div class="portal-panel">
+          <h3 style="font-size:1.15rem; margin-bottom:14px;">Recent Completed Assessments</h3>
+          <div class="table-wrap">
+            <table class="academic-table" style="min-width:600px;">
+              <thead>
+                <tr>
+                  <th>Test Name</th>
+                  <th>Date Taken</th>
+                  <th>Score</th>
+                  <th>Accuracy</th>
+                  <th>Zonal Standing</th>
+                  <th>Review</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>All-India IMO Mock #04</strong></td>
+                  <td>Nov 08, 2026</td>
+                  <td><strong style="color:var(--orange-deep);">56 / 60</strong></td>
+                  <td>93.3%</td>
+                  <td><span class="badge" style="background:rgba(255,94,14,0.12); color:var(--orange-deep);">Rank #4</span></td>
+                  <td><button type="button" class="btn btn-outline btn-sm" onclick="alert('Viewing detailed answer key and solutions for IMO Mock #04...');">View Solutions</button></td>
+                </tr>
+                <tr>
+                  <td><strong>Science Olympiad Diagnostic #02</strong></td>
+                  <td>Nov 02, 2026</td>
+                  <td><strong style="color:var(--orange-deep);">44 / 50</strong></td>
+                  <td>88.0%</td>
+                  <td><span class="badge" style="background:rgba(31,138,76,0.12); color:var(--success);">Rank #9</span></td>
+                  <td><button type="button" class="btn btn-outline btn-sm" onclick="alert('Viewing detailed answer key and solutions for Science Diagnostic #02...');">View Solutions</button></td>
+                </tr>
+                <tr>
+                  <td><strong>Logical Reasoning Benchmark 3</strong></td>
+                  <td>Oct 26, 2026</td>
+                  <td><strong style="color:var(--orange-deep);">47 / 50</strong></td>
+                  <td>94.0%</td>
+                  <td><span class="badge" style="background:rgba(255,94,14,0.12); color:var(--orange-deep);">Rank #3</span></td>
+                  <td><button type="button" class="btn btn-outline btn-sm" onclick="alert('Viewing detailed answer key and solutions for Logic Benchmark 3...');">View Solutions</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           TAB 4: RESULTS & ANALYTICS (In-Page View)
+           =================================================================== -->
+      <section id="tab-performance" class="portal-tab-content" aria-label="Results and Analytics">
+        <div style="margin-bottom:28px;">
+          <div class="demo-badge">ACADEMIC DIAGNOSTICS</div>
+          <h1 style="margin-top:6px; font-size:1.9rem;">Performance Analytics & Growth Trajectory</h1>
+          <p style="font-size:0.92rem; color:var(--text-muted);">Continuous assessment metrics tracking cognitive speed, problem accuracy, and national percentile standing.</p>
+        </div>
+
+        <!-- 4 CORE ANALYTICS KPIS -->
+        <div class="kpi-grid-4">
+          <div class="kpi-widget">
+            <div class="kpi-val">89.4%</div>
+            <div class="kpi-lbl">Overall Accuracy (+4.2%)</div>
+            <div class="progress-track"><div class="progress-fill" style="width:89%;"></div></div>
+          </div>
+          <div class="kpi-widget">
+            <div class="kpi-val">52 Sec</div>
+            <div class="kpi-lbl">Average Speed / Question</div>
+            <div class="progress-track"><div class="progress-fill" style="width:82%;"></div></div>
+          </div>
+          <div class="kpi-widget">
+            <div class="kpi-val">#42</div>
+            <div class="kpi-lbl">All-India National Rank</div>
+            <div class="progress-track"><div class="progress-fill" style="width:96%;"></div></div>
+          </div>
+          <div class="kpi-widget">
+            <div class="kpi-val">1,420</div>
+            <div class="kpi-lbl">Questions Solved</div>
+            <div class="progress-track"><div class="progress-fill" style="width:71%;"></div></div>
+          </div>
+        </div>
+
+        <!-- TOPIC MASTERY BREAKDOWN -->
+        <div class="dashboard-split" style="margin-bottom:28px;">
+          <div class="portal-panel">
+            <h3 style="font-size:1.15rem; margin-bottom:16px;">Core Topic Proficiency Matrix</h3>
+            <div style="display:flex; flex-direction:column; gap:14px;">
+              <div>
+                <div style="display:flex; justify-content:space-between; font-size:0.86rem; margin-bottom:4px;">
+                  <span>Euclidean Geometry & Cyclic Quads</span>
+                  <strong style="color:var(--success);">96% (Mastered)</strong>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width:96%; background:var(--success);"></div></div>
+              </div>
+              <div>
+                <div style="display:flex; justify-content:space-between; font-size:0.86rem; margin-bottom:4px;">
+                  <span>Polynomial Roots & Factoring</span>
+                  <strong style="color:var(--success);">92% (Mastered)</strong>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width:92%; background:var(--success);"></div></div>
+              </div>
+              <div>
+                <div style="display:flex; justify-content:space-between; font-size:0.86rem; margin-bottom:4px;">
+                  <span>Matrix Figure Logic & Spatial Cubes</span>
+                  <strong style="color:var(--success);">95% (Mastered)</strong>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width:95%; background:var(--success);"></div></div>
+              </div>
+              <div>
+                <div style="display:flex; justify-content:space-between; font-size:0.86rem; margin-bottom:4px;">
+                  <span>Ray Optics & Thin Lens Aberrations</span>
+                  <strong style="color:var(--orange-deep);">91% (Mastered)</strong>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width:91%; background:var(--orange-deep);"></div></div>
+              </div>
+              <div>
+                <div style="display:flex; justify-content:space-between; font-size:0.86rem; margin-bottom:4px;">
+                  <span>Classical Kinematics & Vectors</span>
+                  <strong style="color:var(--warning);">84% (Proficient)</strong>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width:84%; background:var(--warning);"></div></div>
+              </div>
+              <div>
+                <div style="display:flex; justify-content:space-between; font-size:0.86rem; margin-bottom:4px;">
+                  <span>Modular Arithmetic & Number Theory</span>
+                  <strong style="color:var(--danger);">78% (Focus Needed)</strong>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width:78%; background:var(--danger);"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portal-panel">
+            <h3 style="font-size:1.15rem; margin-bottom:14px;">Faculty Diagnostic Recommendations</h3>
+            <div style="display:flex; flex-direction:column; gap:12px;">
+              <div style="padding:14px; border-radius:8px; background:var(--bg-soft); border-left:3.5px solid var(--orange);">
+                <strong style="font-size:0.9rem; color:var(--text-main); display:block;">Prof. Namboodiri's Speed Recommendation</strong>
+                <p style="font-size:0.82rem; color:var(--text-muted); margin-top:4px;">
+                  "Rohan's geometric deduction is among the top 1% nationwide. We recommend spending 25 minutes daily on modulo arithmetic shortcuts to shave 15 seconds off PRMO Section B questions."
+                </p>
+              </div>
+              <div style="padding:14px; border-radius:8px; background:var(--bg-soft); border-left:3.5px solid var(--success);">
+                <strong style="font-size:0.9rem; color:var(--text-main); display:block;">Dr. Suniti Banerjee's Laboratory Note</strong>
+                <p style="font-size:0.82rem; color:var(--text-muted); margin-top:4px;">
+                  "Excellent grasp of ray tracing and refractive indices. Proceed to multi-lens optical configurations and experimental optics worksheet #04 before the upcoming mock."
+                </p>
+              </div>
+              <div style="padding:14px; border-radius:8px; background:var(--bg-soft); border-left:3.5px solid var(--black);">
+                <strong style="font-size:0.9rem; color:var(--text-main); display:block;">Maheshwar Trivedi's Cognitive Benchmark</strong>
+                <p style="font-size:0.82rem; color:var(--text-muted); margin-top:4px;">
+                  "Clock and calendar puzzle accuracy reached 100% on the benchmark. Ready to unlock advanced syllogisms and Venn diagram deduction banks."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           TAB 5: STUDY RESOURCES (In-Page View)
+           =================================================================== -->
+      <section id="tab-resources" class="portal-tab-content" aria-label="Study Resources and Vault">
+        <div style="margin-bottom:28px;">
+          <div class="demo-badge">CURATED LEARNING VAULT</div>
+          <h1 style="margin-top:6px; font-size:1.9rem;">Study Resources & Problem Banks</h1>
+          <p style="font-size:0.92rem; color:var(--text-muted);">Download faculty-authored non-routine problem sets, comprehensive formula compendiums, and replay recorded masterclasses.</p>
+        </div>
+
+        <!-- 9 DOWNLOADABLE / STREAMABLE RESOURCE CARDS (3x3 ALIGNMENT) -->
+        <div class="resources-grid-3x3">
+          <!-- Resource 1 (Row 1, Col 1) -->
+          <div class="portal-panel" style="display:flex; flex-direction:column; justify-content:space-between; gap:16px;">
+            <div>
+              <span class="badge" style="background:rgba(255,94,14,0.12); color:var(--orange-deep); font-weight:700;">MATHEMATICS PDF</span>
+              <h3 style="font-size:1.15rem; margin-top:8px;">PRMO Euclidean Geometry Problem Vault</h3>
+              <p style="font-size:0.84rem; color:var(--text-muted); margin-top:6px; line-height:1.5;">120 curated non-routine Olympiad problems with complete geometric proofs, auxiliary line hints, and angle chasing solutions.</p>
+              <div style="font-size:0.78rem; color:var(--text-muted); margin-top:10px;">Size: 4.2 MB • Updated for 2026 Batch</div>
+            </div>
+            <button type="button" class="btn btn-outline btn-sm" style="width:100%; cursor:pointer;" onclick="alert('Downloading PRMO Euclidean Geometry Problem Vault (PDF)...');">Download PDF Document ↓</button>
+          </div>
+
+          <!-- Resource 2 (Row 1, Col 2) -->
+          <div class="portal-panel" style="display:flex; flex-direction:column; justify-content:space-between; gap:16px;">
+            <div>
+              <span class="badge" style="background:rgba(255,94,14,0.12); color:var(--orange-deep); font-weight:700;">FORMULA COMPENDIUM</span>
+              <h3 style="font-size:1.15rem; margin-top:8px;">Comprehensive Olympiad Formula Sheet</h3>
+              <p style="font-size:0.84rem; color:var(--text-muted); margin-top:6px; line-height:1.5;">Axiomatic formulas for Algebra, Number Theory, Geometry, Combinatorics, and modular arithmetic benchmarks.</p>
+              <div style="font-size:0.78rem; color:var(--text-muted); margin-top:10px;">Size: 2.8 MB • Quick Reference Guide</div>
+            </div>
+            <button type="button" class="btn btn-outline btn-sm" style="width:100%; cursor:pointer;" onclick="alert('Downloading Olympiad Formula Sheet (PDF)...');">Download PDF Document ↓</button>
+          </div>
+
+          <!-- Resource 3 (Row 1, Col 3) -->
+          <div class="portal-panel" style="display:flex; flex-direction:column; justify-content:space-between; gap:16px;">
+            <div>
+              <span class="badge" style="background:rgba(31,138,76,0.12); color:var(--success); font-weight:700;">SCIENCE WORKBOOK</span>
+              <h3 style="font-size:1.15rem; margin-top:8px;">NSEJS Mechanics & Optics Practice Vault</h3>
+              <p style="font-size:0.84rem; color:var(--text-muted); margin-top:6px; line-height:1.5;">85 multi-step conceptual physics problems with experimental ray diagrams, laboratory data tables, and step-by-step solutions.</p>
+              <div style="font-size:0.78rem; color:var(--text-muted); margin-top:10px;">Size: 5.6 MB • Stage 1 & 2 Syllabus</div>
+            </div>
+            <button type="button" class="btn btn-outline btn-sm" style="width:100%; cursor:pointer;" onclick="alert('Downloading NSEJS Mechanics & Optics Practice Vault (PDF)...');">Download PDF Document ↓</button>
+          </div>
+
+          <!-- Resource 4 (Row 2, Col 1) -->
+          <div class="portal-panel" style="display:flex; flex-direction:column; justify-content:space-between; gap:16px;">
+            <div>
+              <span class="badge" style="background:rgba(217,119,6,0.12); color:var(--warning); font-weight:700;">LOGIC HANDBOOK</span>
+              <h3 style="font-size:1.15rem; margin-top:8px;">Spatial Reasoning & Matrix Patterns</h3>
+              <p style="font-size:0.84rem; color:var(--text-muted); margin-top:6px; line-height:1.5;">60 non-verbal figure matrices, cube transformation diagrams, direction sense shortcuts, and algorithmic syllogisms.</p>
+              <div style="font-size:0.78rem; color:var(--text-muted); margin-top:10px;">Size: 3.4 MB • NTSE & NMMS Benchmark</div>
+            </div>
+            <button type="button" class="btn btn-outline btn-sm" style="width:100%; cursor:pointer;" onclick="alert('Downloading Spatial Reasoning & Matrix Patterns Handbook (PDF)...');">Download PDF Document ↓</button>
+          </div>
+
+          <!-- Resource 5 (Row 2, Col 2) -->
+          <div class="portal-panel" style="display:flex; flex-direction:column; justify-content:space-between; gap:16px;">
+            <div>
+              <span class="badge" style="background:rgba(14,142,165,0.12); color:#0E8EA5; font-weight:700;">CHEMISTRY VAULT</span>
+              <h3 style="font-size:1.15rem; margin-top:8px;">Inorganic Reactions & Stoichiometry Workbook</h3>
+              <p style="font-size:0.84rem; color:var(--text-muted); margin-top:6px; line-height:1.5;">75 multi-concept problems covering mole concepts, oxidation-reduction titration curves, and molecular orbital models.</p>
+              <div style="font-size:0.78rem; color:var(--text-muted); margin-top:10px;">Size: 3.9 MB • NSO & IJSO Chemistry Prep</div>
+            </div>
+            <button type="button" class="btn btn-outline btn-sm" style="width:100%; cursor:pointer;" onclick="alert('Downloading Inorganic Reactions & Stoichiometry Workbook (PDF)...');">Download PDF Document ↓</button>
+          </div>
+
+          <!-- Resource 6 (Row 2, Col 3) -->
+          <div class="portal-panel" style="display:flex; flex-direction:column; justify-content:space-between; gap:16px;">
+            <div>
+              <span class="badge" style="background:rgba(124,58,237,0.12); color:#7C3AED; font-weight:700;">ENGLISH LANGUAGE GUIDE</span>
+              <h3 style="font-size:1.15rem; margin-top:8px;">IEO Etymological Lexicon & Reading Compendium</h3>
+              <p style="font-size:0.84rem; color:var(--text-muted); margin-top:6px; line-height:1.5;">500+ classical Latin & Greek roots, syntactical error detection drills, and rapid inferential comprehension passages.</p>
+              <div style="font-size:0.78rem; color:var(--text-muted); margin-top:10px;">Size: 3.1 MB • International English Olympiad</div>
+            </div>
+            <button type="button" class="btn btn-outline btn-sm" style="width:100%; cursor:pointer;" onclick="alert('Downloading IEO Etymological Lexicon (PDF)...');">Download PDF Document ↓</button>
+          </div>
+
+          <!-- Resource 7 (Row 3, Col 1) -->
+          <div class="portal-panel" style="display:flex; flex-direction:column; justify-content:space-between; gap:16px;">
+            <div>
+              <span class="badge" style="background:rgba(0,102,204,0.12); color:#0066CC; font-weight:700;">RECORDED MASTERCLASS</span>
+              <h3 style="font-size:1.15rem; margin-top:8px;">Modulo Arithmetic & Diophantine Equations</h3>
+              <p style="font-size:0.84rem; color:var(--text-muted); margin-top:6px; line-height:1.5;">90-minute live masterclass recording by Prof. R. K. Namboodiri covering non-routine integer divisibility problems.</p>
+              <div style="font-size:0.78rem; color:var(--text-muted); margin-top:10px;">Duration: 92 Mins • High Definition Video</div>
+            </div>
+            <button type="button" class="btn btn-primary btn-sm" style="width:100%; cursor:pointer;" onclick="alert('Opening Recorded Masterclass Video Player...');">Watch Video Recording ▶</button>
+          </div>
+
+          <!-- Resource 8 (Row 3, Col 2) -->
+          <div class="portal-panel" style="display:flex; flex-direction:column; justify-content:space-between; gap:16px;">
+            <div>
+              <span class="badge" style="background:rgba(0,102,204,0.12); color:#0066CC; font-weight:700;">RECORDED MASTERCLASS</span>
+              <h3 style="font-size:1.15rem; margin-top:8px;">Ray Optics & Thin Lens Formulations</h3>
+              <p style="font-size:0.84rem; color:var(--text-muted); margin-top:6px; line-height:1.5;">80-minute lecture archive by Dr. Suniti Banerjee with live optical bench derivations and refractive index experiments.</p>
+              <div style="font-size:0.78rem; color:var(--text-muted); margin-top:10px;">Duration: 84 Mins • High Definition Video</div>
+            </div>
+            <button type="button" class="btn btn-primary btn-sm" style="width:100%; cursor:pointer;" onclick="alert('Opening Recorded Masterclass Video Player...');">Watch Video Recording ▶</button>
+          </div>
+
+          <!-- Resource 9 (Row 3, Col 3) -->
+          <div class="portal-panel" style="display:flex; flex-direction:column; justify-content:space-between; gap:16px;">
+            <div>
+              <span class="badge" style="background:rgba(0,102,204,0.12); color:#0066CC; font-weight:700;">RECORDED MASTERCLASS</span>
+              <h3 style="font-size:1.15rem; margin-top:8px;">Algorithmic Logic & Spatial Transformation</h3>
+              <p style="font-size:0.84rem; color:var(--text-muted); margin-top:6px; line-height:1.5;">75-minute masterclass archive by Maheshwar Trivedi deconstructing 3D folding cubes and complex non-verbal matrix sequences.</p>
+              <div style="font-size:0.78rem; color:var(--text-muted); margin-top:10px;">Duration: 78 Mins • High Definition Video</div>
+            </div>
+            <button type="button" class="btn btn-primary btn-sm" style="width:100%; cursor:pointer;" onclick="alert('Opening Recorded Masterclass Video Player...');">Watch Video Recording ▶</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           TAB 6: CLASS SCHEDULE (In-Page View)
+           =================================================================== -->
+      <section id="tab-schedule" class="portal-tab-content" aria-label="Class Schedule and Timetable">
+        <div style="margin-bottom:28px;">
+          <div class="demo-badge">TIMETABLE & LECTURES</div>
+          <h1 style="margin-top:6px; font-size:1.9rem;">Weekly Live Lecture Schedule</h1>
+          <p style="font-size:0.92rem; color:var(--text-muted);">Personalized lecture timetable, laboratory sessions, and 1-on-1 faculty doubt clearance hours.</p>
+        </div>
+
+        <!-- UPCOMING CLASS CALLOUT -->
+        <div class="portal-panel" style="margin-bottom:28px; background:linear-gradient(135deg, rgba(255,94,14,0.08) 0%, rgba(255,94,14,0.02) 100%); border-left:4px solid var(--orange);">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
+            <div>
+              <span class="badge" style="background:rgba(255,94,14,0.16); color:var(--orange-deep); font-weight:700;">NEXT SCHEDULED SESSION</span>
+              <h3 style="font-size:1.3rem; margin-top:6px;">Euclidean Geometry: Angle Chasing & Cyclic Quadrilaterals</h3>
+              <p style="font-size:0.88rem; color:var(--text-muted); margin-top:4px;">
+                Prof. R. K. Namboodiri • Today, 5:00 PM – 6:30 PM • Room: Aryabhata Amphitheatre
+              </p>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="alert('Connecting to Virtual Live Amphitheatre...');">Join Live Lecture →</button>
+          </div>
+        </div>
+
+        <!-- WEEKLY TIMETABLE TABLE -->
+        <div class="portal-panel">
+          <h3 style="font-size:1.15rem; margin-bottom:14px;">Weekly Schedule (Monday through Saturday)</h3>
+          <div class="table-wrap">
+            <table class="academic-table" style="min-width:680px;">
+              <thead>
+                <tr>
+                  <th>Day</th>
+                  <th>Timing</th>
+                  <th>Subject & Topic</th>
+                  <th>Session Type</th>
+                  <th>Faculty Mentor</th>
+                  <th>Location / Mode</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Monday</strong></td>
+                  <td>05:00 PM – 06:30 PM</td>
+                  <td>Mathematics: Euclidean Geometry</td>
+                  <td>Live Lecture & Proofs</td>
+                  <td>Prof. R. K. Namboodiri</td>
+                  <td>Aryabhata Amphitheatre</td>
+                </tr>
+                <tr>
+                  <td><strong>Tuesday</strong></td>
+                  <td>05:00 PM – 06:30 PM</td>
+                  <td>Science: Mechanics & Ray Optics</td>
+                  <td>Practical Demonstration</td>
+                  <td>Dr. Suniti Banerjee</td>
+                  <td>Raman Physics Lab</td>
+                </tr>
+                <tr>
+                  <td><strong>Wednesday</strong></td>
+                  <td>04:30 PM – 06:00 PM</td>
+                  <td>Logical Reasoning: Matrix Puzzles</td>
+                  <td>Speed Strategy Clinic</td>
+                  <td>Maheshwar Trivedi</td>
+                  <td>Turing Hall</td>
+                </tr>
+                <tr>
+                  <td><strong>Thursday</strong></td>
+                  <td>05:00 PM – 06:30 PM</td>
+                  <td>Mathematics: Number Theory & Modulo</td>
+                  <td>Problem Solving Sprint</td>
+                  <td>Prof. R. K. Namboodiri</td>
+                  <td>Aryabhata Amphitheatre</td>
+                </tr>
+                <tr>
+                  <td><strong>Friday</strong></td>
+                  <td>05:00 PM – 06:00 PM</td>
+                  <td>1-on-1 Academic Doubt Clearance</td>
+                  <td>Doubt Resolution Clinic</td>
+                  <td>Senior Faculty Cohort</td>
+                  <td>Mentorship Wing Room 4</td>
+                </tr>
+                <tr>
+                  <td><strong>Saturday</strong></td>
+                  <td>10:00 AM – 11:30 AM</td>
+                  <td>All-India Weekly Diagnostic Mock Exam</td>
+                  <td>Proctored Online Mock</td>
+                  <td>Olympiad Exam Board</td>
+                  <td>Testing Portal</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           TAB 7: MENTOR SUPPORT (In-Page View)
+           =================================================================== -->
+      <section id="tab-mentor-support" class="portal-tab-content" aria-label="Mentor Support and Doubt Clearance">
+        <div style="margin-bottom:28px;">
+          <div class="demo-badge">DOUBT CLEARANCE & ADVISORY</div>
+          <h1 style="margin-top:6px; font-size:1.9rem;">Mentor Support & Faculty Guidance</h1>
+          <p style="font-size:0.92rem; color:var(--text-muted);">Submit academic questions directly to subject leads or book a 1-on-1 problem-solving session.</p>
+        </div>
+
+        <div class="dashboard-split" style="margin-bottom:28px;">
+          <!-- SUBMIT A DOUBT FORM -->
+          <div class="portal-panel">
+            <h3 style="font-size:1.15rem; margin-bottom:14px;">Submit an Academic Doubt</h3>
+            <form id="mentorDoubtForm" onsubmit="event.preventDefault(); alert('Your academic query has been submitted to your assigned mentor. Response will be posted within 4 hours.'); this.reset();">
+              <div class="form-group" style="margin-bottom:14px;">
+                <label class="form-label" for="doubtSubject">Subject Discipline *</label>
+                <select id="doubtSubject" class="form-control" required>
+                  <option value="">Select Subject</option>
+                  <option value="math">Mathematics (Prof. R. K. Namboodiri)</option>
+                  <option value="physics">Physics (Dr. Suniti Banerjee)</option>
+                  <option value="chemistry">Chemistry (Venkatesh Raman)</option>
+                  <option value="reasoning">Logical Reasoning (Maheshwar Trivedi)</option>
+                  <option value="english">English (Anuradha Sen Sharma)</option>
+                </select>
+              </div>
+
+              <div class="form-group" style="margin-bottom:14px;">
+                <label class="form-label" for="doubtTopic">Problem Topic / Theorem *</label>
+                <input type="text" id="doubtTopic" class="form-control" placeholder="e.g. Diophantine equations or Angle Bisector Theorem" required>
+              </div>
+
+              <div class="form-group" style="margin-bottom:16px;">
+                <label class="form-label" for="doubtQuestion">Describe Your Query in Detail *</label>
+                <textarea id="doubtQuestion" class="form-control" rows="4" placeholder="Explain the specific step or concept where you need guidance..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%;">Submit Question to Mentor →</button>
+            </form>
+          </div>
+
+          <!-- ASSIGNED MENTORS & OFFICE HOURS -->
+          <div class="portal-panel">
+            <h3 style="font-size:1.15rem; margin-bottom:14px;">Assigned Mentors & Office Hours</h3>
+            <div style="display:flex; flex-direction:column; gap:12px;">
+              <div style="padding:12px 14px; border-radius:8px; background:var(--bg-soft); display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                  <strong style="font-size:0.92rem; display:block;">Prof. R. K. Namboodiri</strong>
+                  <span style="font-size:0.78rem; color:var(--text-muted);">Head of Mathematics • IIT Bombay</span>
+                  <div style="font-size:0.75rem; color:var(--orange-deep); margin-top:2px;">Office Hours: Mon & Wed 4:00 PM – 6:00 PM</div>
+                </div>
+                <button type="button" class="btn btn-outline btn-sm" onclick="alert('Booking 1-on-1 slot with Prof. Namboodiri...');">Book Slot</button>
+              </div>
+
+              <div style="padding:12px 14px; border-radius:8px; background:var(--bg-soft); display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                  <strong style="font-size:0.92rem; display:block;">Dr. Suniti Banerjee</strong>
+                  <span style="font-size:0.78rem; color:var(--text-muted);">Dean of Physical Sciences • IISc Bangalore</span>
+                  <div style="font-size:0.75rem; color:var(--orange-deep); margin-top:2px;">Office Hours: Tue & Thu 3:30 PM – 5:30 PM</div>
+                </div>
+                <button type="button" class="btn btn-outline btn-sm" onclick="alert('Booking 1-on-1 slot with Dr. Suniti Banerjee...');">Book Slot</button>
+              </div>
+
+              <div style="padding:12px 14px; border-radius:8px; background:var(--bg-soft); display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                  <strong style="font-size:0.92rem; display:block;">Maheshwar Trivedi</strong>
+                  <span style="font-size:0.78rem; color:var(--text-muted);">Director of Reasoning • Cognitive Psychology</span>
+                  <div style="font-size:0.75rem; color:var(--orange-deep); margin-top:2px;">Office Hours: Wed & Fri 5:00 PM – 7:00 PM</div>
+                </div>
+                <button type="button" class="btn btn-outline btn-sm" onclick="alert('Booking 1-on-1 slot with Maheshwar Trivedi...');">Book Slot</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RECENT DOUBT TICKETS -->
+        <div class="portal-panel">
+          <h3 style="font-size:1.15rem; margin-bottom:14px;">Recent Doubt Tickets & Mentor Replies</h3>
+          <div class="table-wrap">
+            <table class="academic-table" style="min-width:620px;">
+              <thead>
+                <tr>
+                  <th>Ticket ID</th>
+                  <th>Topic</th>
+                  <th>Assigned Mentor</th>
+                  <th>Status</th>
+                  <th>Date</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>#DBT-441</strong></td>
+                  <td>Chinese Remainder Theorem modulo coprime ambiguity</td>
+                  <td>Prof. R. K. Namboodiri</td>
+                  <td><span class="badge" style="background:rgba(31,138,76,0.12); color:var(--success);">Answered</span></td>
+                  <td>Nov 11, 2026</td>
+                  <td><button type="button" class="btn btn-outline btn-sm" onclick="alert('Viewing Prof. Namboodiri's detailed step-by-step mathematical proof solution...');">View Solution</button></td>
+                </tr>
+                <tr>
+                  <td><strong>#DBT-438</strong></td>
+                  <td>Sign conventions for diverging meniscus in thin lens</td>
+                  <td>Dr. Suniti Banerjee</td>
+                  <td><span class="badge" style="background:rgba(31,138,76,0.12); color:var(--success);">Answered</span></td>
+                  <td>Nov 07, 2026</td>
+                  <td><button type="button" class="btn btn-outline btn-sm" onclick="alert('Viewing Dr. Banerjee's ray diagram explanation...');">View Solution</button></td>
+                </tr>
+                <tr>
+                  <td><strong>#DBT-429</strong></td>
+                  <td>Non-verbal figure matrix diagonal rotation rule</td>
+                  <td>Maheshwar Trivedi</td>
+                  <td><span class="badge" style="background:rgba(31,138,76,0.12); color:var(--success);">Answered</span></td>
+                  <td>Oct 30, 2026</td>
+                  <td><button type="button" class="btn btn-outline btn-sm" onclick="alert('Viewing Maheshwar Trivedi's pattern matrix breakdown...');">View Solution</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script>
+    (function() {
+      window.switchDashboardTab = function(targetTabId) {
+        if (!targetTabId) return;
+        var cleanId = String(targetTabId).replace('#', '').replace('tab-', '').trim();
+        var targetSection = document.getElementById('tab-' + cleanId);
+        if (!targetSection) return;
+
+        var portalNavLinks = document.querySelectorAll('.portal-nav-link[data-tab]');
+        var portalTabContents = document.querySelectorAll('.portal-tab-content');
+        var sidebar = document.querySelector('.portal-sidebar');
+
+        portalNavLinks.forEach(function(link) {
+          if (link.getAttribute('data-tab') === cleanId) {
+            link.classList.add('is-active');
+          } else {
+            link.classList.remove('is-active');
+          }
+        });
+
+        portalTabContents.forEach(function(section) {
+          section.classList.remove('is-active');
+        });
+        targetSection.classList.add('is-active');
+
+        if (sidebar) {
+          sidebar.classList.remove('is-open');
+        }
+
+        try {
+          if (history.pushState) {
+            history.pushState(null, null, '#' + cleanId);
+          } else {
+            location.hash = cleanId;
+          }
+        } catch (e) {}
+
+        var mainEl = document.querySelector('.portal-main');
+        if (mainEl && window.innerWidth <= 991) {
+          mainEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      };
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var initialHash = window.location.hash.replace('#', '').replace('tab-', '');
+        if (initialHash && document.getElementById('tab-' + initialHash)) {
+          window.switchDashboardTab(initialHash);
+        }
+      });
+    })();
+  </script>
+  
+<script src="assets/js/main.js"></script>
+
+  <!-- DROP TO TOP (SCROLL TO TOP) BUTTON -->
+  <button type="button" id="backToTopBtn" class="back-to-top-btn" aria-label="Scroll to top" title="Drop to top">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+</body>
+</html>

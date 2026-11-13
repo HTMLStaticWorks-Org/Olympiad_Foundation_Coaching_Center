@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portal Registration | Pragyan Olympiad Academy</title>
+  <meta name="description" content="Premier Olympiad Foundation Coaching Center specializing in Mathematics, Science, Logical Reasoning, and English competitive exam training.">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem('pragyan_theme');
+        if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+        var d = localStorage.getItem('pragyan_dir');
+        if (d === 'rtl') {
+          document.documentElement.setAttribute('dir', 'rtl');
+        }
+      } catch(e) {}
+    })();
+  </script>
+</head>
+<body class="standalone-portal">
+
+
+  <div class="auth-page-wrapper">
+    <!-- Top-Right Theme and RTL Buttons -->
+    <div class="auth-top-bar">
+      <button type="button" class="nav-icon-btn theme-toggle" aria-label="Toggle Theme" title="Toggle Light / Dark Theme">
+        <svg class="theme-icon-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button type="button" class="nav-icon-btn rtl-toggle" aria-label="Toggle Text Direction" title="Switch Text Direction (RTL / LTR)">
+        <svg class="rtl-icon-svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M16 3l4 4-4 4"/><path d="M20 17H4M8 13l-4 4 4 4"/></svg>
+      </button>
+    </div>
+
+    <!-- Centered Card Box -->
+    <div class="auth-card-box auth-register-box">
+      <!-- Website Branding Inside Card -->
+      <div class="auth-card-brand">
+        <a href="index.html" style="display:inline-flex; align-items:center; gap:12px; text-decoration:none;">
+          <img src="images/logo.png" alt="Pragyan Olympiad Academy Logo" class="auth-brand-logo-img">
+          <div style="text-align:left;">
+            <span class="auth-brand-name">PRAGYAN</span>
+            <span class="auth-brand-sub">Olympiad Academy</span>
+          </div>
+        </a>
+      </div>
+
+      <div style="text-align:center; margin-bottom:24px;">
+        <span class="eyebrow" style="color:var(--orange);">PORTAL REGISTRATION</span>
+        <h2 style="margin-top:6px; font-size:1.6rem;">Student Registration</h2>
+        <p style="font-size:0.88rem; color:var(--text-muted); margin-top:4px;">Complete the form below to initialize your student portal profile.</p>
+      </div>
+
+      <form id="registerForm" class="form-card" data-validate="true" data-success-msg="Registration successful! Redirecting to your student dashboard...">
+        <!-- Form Inputs Arranged in One-by-One Vertical Alignment -->
+        <div style="display:flex; flex-direction:column; gap:16px;">
+          <div class="form-group">
+            <label class="form-label" for="regStudentName">Student Full Name *</label>
+            <input type="text" id="regStudentName" name="studentName" class="form-control" placeholder="Aditya Sharma" required>
+            <span class="form-error" id="err-studentName"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="regParentName">Parent / Guardian Name *</label>
+            <input type="text" id="regParentName" name="parentName" class="form-control" placeholder="Dr. S. Sharma" required>
+            <span class="form-error" id="err-parentName"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="regEmail">Email Address *</label>
+            <input type="email" id="regEmail" name="email" class="form-control" placeholder="parent@email.com" required>
+            <span class="form-error" id="err-email"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="regMobile">Mobile Number (10 digits) *</label>
+            <input type="tel" id="regMobile" name="mobile" class="form-control" placeholder="9876543210" required>
+            <span class="form-error" id="err-mobile"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="regGrade">Current School Grade *</label>
+            <select id="regGrade" name="grade" class="form-control" required>
+              <option value="">Select Grade</option>
+              <option value="1">Grade 1</option>
+              <option value="2">Grade 2</option>
+              <option value="3">Grade 3</option>
+              <option value="4">Grade 4</option>
+              <option value="5">Grade 5</option>
+              <option value="6">Grade 6</option>
+              <option value="7">Grade 7</option>
+              <option value="8">Grade 8</option>
+              <option value="9">Grade 9</option>
+              <option value="10">Grade 10</option>
+            </select>
+            <span class="form-error" id="err-grade"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="regStudentId">Student ID (Optional)</label>
+            <input type="text" id="regStudentId" name="studentId" class="form-control" placeholder="Leave blank to auto-generate">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="regPassword">Create Password (min 6 chars) *</label>
+            <div class="password-wrap">
+              <input type="password" id="regPassword" name="password" class="form-control" placeholder="••••••••" required minlength="6">
+              <button type="button" class="password-toggle">Show</button>
+            </div>
+            <span class="form-error" id="err-password"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="confirmPassword">Confirm Password *</label>
+            <div class="password-wrap">
+              <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" placeholder="••••••••" required minlength="6">
+              <button type="button" class="password-toggle">Show</button>
+            </div>
+            <span class="form-error" id="err-confirmPassword"></span>
+          </div>
+        </div>
+
+        <div style="margin-top:20px;">
+          <button type="submit" class="btn btn-primary" style="width:100%;">Create Student Account →</button>
+        </div>
+        <div class="form-status" role="status"></div>
+
+        <!-- Professional Google & Apple Buttons Below CTA -->
+        <div class="auth-divider">
+          <span></span>
+          <span class="auth-divider-text">Or continue with</span>
+          <span></span>
+        </div>
+
+        <div class="auth-social-grid">
+          <button type="button" class="btn-social btn-google" aria-label="Sign up with Google">
+            <svg width="18" height="18" viewBox="0 0 24 24">
+              <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.66v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.15z"/>
+              <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.24v3.15C3.26 21.4 7.34 24 12 24z"/>
+              <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.24C.45 8.14 0 9.89 0 12s.45 3.86 1.24 5.42l4.04-3.15z"/>
+              <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.34 0 3.26 2.6 1.24 6.58l4.04 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+            </svg>
+            <span>Google</span>
+          </button>
+          <button type="button" class="btn-social btn-apple" aria-label="Sign up with Apple">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.38c.62-.75 1.04-1.8 0.93-2.85-.9.04-1.98.6-2.62 1.35-.57.65-1.06 1.72-.93 2.74 1 .08 2-.5 2.62-1.24"/>
+            </svg>
+            <span>Apple</span>
+          </button>
+        </div>
+
+        <!-- Clean One-by-One Bottom Navigation Links -->
+        <div style="display:flex; flex-direction:column; align-items:center; gap:8px; margin-top:16px; text-align:center; font-size:0.86rem;">
+          <div>
+            <span style="color:var(--text-muted);">Already have an account?</span>
+            <a href="login.html" style="color:var(--orange-deep); font-weight:700; margin-left:4px;">Sign in to Portal</a>
+          </div>
+          <div>
+            <a href="contact.html" style="color:var(--text-muted); font-size:0.82rem; text-decoration:none;">Need admissions guidance? <span style="color:var(--orange); font-weight:600;">Contact Us</span></a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+<script src="assets/js/main.js"></script>
+
+  <!-- DROP TO TOP (SCROLL TO TOP) BUTTON -->
+  <button type="button" id="backToTopBtn" class="back-to-top-btn" aria-label="Scroll to top" title="Drop to top">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+</body>
+</html>

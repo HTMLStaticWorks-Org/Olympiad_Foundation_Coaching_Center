@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Admissions | Pragyan Olympiad Academy</title>
+  <meta name="description" content="Premier Olympiad Foundation Coaching Center specializing in Mathematics, Science, Logical Reasoning, and English competitive exam training.">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem('pragyan_theme');
+        if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+        var d = localStorage.getItem('pragyan_dir');
+        if (d === 'rtl') {
+          document.documentElement.setAttribute('dir', 'rtl');
+        }
+      } catch(e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- HEADER & NAVIGATION -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Pragyan Olympiad Academy">
+        <img src="images/logo.png" alt="Pragyan Olympiad Academy Logo" class="brand-logo-img">
+        <div class="brand-logo-text">
+          <span class="brand-name">PRAGYAN</span>
+          <span class="brand-sub">Olympiad Academy</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <div class="nav-item">
+          <a href="index.html" class="nav-link ">Home</a>
+        </div>
+        <div class="nav-item">
+          <a href="home-2.html" class="nav-link ">Home 2</a>
+        </div>
+        <div class="nav-item">
+          <a href="about.html" class="nav-link ">About</a>
+        </div>
+
+        <!-- MEGA MENU FOR PROGRAMS -->
+        <div class="nav-item has-mega">
+          <a href="programs.html" class="nav-link mega-trigger ">
+            Programs
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </a>
+          <div class="mega-menu">
+            <div class="container mega-grid">
+              <div class="mega-intro">
+                <span class="eyebrow" style="color:var(--orange);">FOUNDATION TRAINING</span>
+                <h4 style="margin-top:6px;">Olympiad Programs (Grades 1–10)</h4>
+                <p>Structured conceptual development in Mathematics, Sciences, Logical Reasoning, and English Olympiads.</p>
+                <a href="programs.html" class="btn btn-primary btn-sm">View Full Catalogue →</a>
+              </div>
+              <div class="mega-links-grid">
+                <a href="mathematics.html" class="mega-card-link">
+                  <img src="images/image-65.png" alt="Math Olympiad Proofs" class="mega-card-thumb">
+                  <div class="mega-card-content">
+                    <span class="mega-card-title">Mathematics Olympiad</span>
+                    <span class="mega-card-desc">IMO, NMTC, PRMO, AMC 8/10 foundation & advanced problem-solving.</span>
+                  </div>
+                </a>
+                <a href="science.html" class="mega-card-link">
+                  <img src="images/image-69.png" alt="Science Lab Titrations" class="mega-card-thumb">
+                  <div class="mega-card-content">
+                    <span class="mega-card-title">Science Olympiad</span>
+                    <span class="mega-card-desc">NSO, IJSO, NSEJS rigorous physics, chemistry & biology foundations.</span>
+                  </div>
+                </a>
+                <a href="reasoning.html" class="mega-card-link">
+                  <img src="images/image-73.png" alt="Logical Reasoning Puzzles" class="mega-card-thumb">
+                  <div class="mega-card-content">
+                    <span class="mega-card-title">Logical Reasoning</span>
+                    <span class="mega-card-desc">Mental ability, non-verbal patterns, analytical puzzles & deduction.</span>
+                  </div>
+                </a>
+                <a href="english.html" class="mega-card-link">
+                  <img src="images/image-77.png" alt="English Reading & Lexicon" class="mega-card-thumb">
+                  <div class="mega-card-content">
+                    <span class="mega-card-title">English Olympiad</span>
+                    <span class="mega-card-desc">IEO, spelling, verbal reasoning, linguistics & reading comprehension.</span>
+                  </div>
+                </a>
+                <a href="grades.html" class="mega-card-link">
+                  <img src="images/image-79.png" alt="Grade-Wise Classroom" class="mega-card-thumb">
+                  <div class="mega-card-content">
+                    <span class="mega-card-title">Grade-Wise Learning</span>
+                    <span class="mega-card-desc">Targeted curriculum tracks from Primary (1–3) to Advanced (9–10).</span>
+                  </div>
+                </a>
+                <a href="methodology.html" class="mega-card-link">
+                  <img src="images/image-82.png" alt="Personalized Learning Method" class="mega-card-thumb">
+                  <div class="mega-card-content">
+                    <span class="mega-card-title">Learning Methodology</span>
+                    <span class="mega-card-desc">Concept building, guided practice, weekly diagnostics & analytics.</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <a href="results.html" class="nav-link ">Results</a>
+        </div>
+        <div class="nav-item">
+          <a href="faculty.html" class="nav-link ">Faculty</a>
+        </div>
+        <div class="nav-item">
+          <a href="resources.html" class="nav-link ">Resources</a>
+        </div>
+        <div class="nav-item">
+          <a href="contact.html" class="nav-link active">Contact</a>
+        </div>
+        <div class="nav-item">
+          <a href="dashboard.html" class="nav-link ">Dashboard</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button type="button" class="nav-icon-btn theme-toggle" aria-label="Toggle Theme" title="Toggle Light / Dark Theme">
+          <svg class="theme-icon-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <!-- RTL Toggle (Right-to-Left and Left-to-Right Arrow Design) -->
+        <button type="button" class="nav-icon-btn rtl-toggle" aria-label="Toggle Text Direction" title="Switch Text Direction (RTL / LTR)">
+          <svg class="rtl-icon-svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M16 3l4 4-4 4"/><path d="M20 17H4M8 13l-4 4 4 4"/></svg>
+        </button>
+
+        <!-- Login Button -->
+        <a href="login.html" class="nav-login-btn" title="Student & Parent Portal Login">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span>Login</span>
+        </a>
+
+        <!-- Mobile Drawer Toggle -->
+        <button class="menu-toggle" aria-label="Toggle Navigation Drawer">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-drawer-backdrop"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo" aria-label="Pragyan Olympiad Academy">
+        <img src="images/logo.png" alt="Pragyan Olympiad Academy Logo" class="brand-logo-img" style="height:38px; width:auto;">
+        <div class="brand-logo-text">
+          <span class="brand-name">PRAGYAN</span>
+          <span class="brand-sub">Olympiad Academy</span>
+        </div>
+      </a>
+      <button class="drawer-close" aria-label="Close Navigation Drawer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="drawer-body">
+      <a href="index.html" class="drawer-link ">Home</a>
+      <a href="home-2.html" class="drawer-link ">Home 2</a>
+      <a href="about.html" class="drawer-link ">About</a>
+      
+      <div style="width:100%; display:flex; flex-direction:column; align-items:center;">
+        <a href="programs.html" class="drawer-link drawer-submenu-trigger ">
+          <span>Programs</span>
+          <svg class="drawer-chevron" width="14" height="14" viewBox="0 0 12 12" fill="none"><path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="drawer-submenu">
+          <a href="programs.html" class="drawer-sublink ">All Programs</a>
+          <a href="mathematics.html" class="drawer-sublink ">Mathematics Olympiad</a>
+          <a href="science.html" class="drawer-sublink ">Science Olympiad</a>
+          <a href="reasoning.html" class="drawer-sublink ">Logical Reasoning</a>
+          <a href="english.html" class="drawer-sublink ">English Olympiad</a>
+          <a href="grades.html" class="drawer-sublink ">Grade-Wise Learning</a>
+          <a href="methodology.html" class="drawer-sublink ">Learning Methodology</a>
+        </div>
+      </div>
+
+      <a href="results.html" class="drawer-link ">Results</a>
+      <a href="faculty.html" class="drawer-link ">Faculty</a>
+      <a href="resources.html" class="drawer-link ">Resources</a>
+      <a href="contact.html" class="drawer-link active">Contact</a>
+      <a href="dashboard.html" class="drawer-link ">Dashboard</a>
+    </div>
+    <div class="drawer-footer">
+      <!-- Theme and RTL Buttons in Same Horizontal Line -->
+      <div class="drawer-theme-rtl-row">
+        <button type="button" class="nav-icon-btn theme-toggle" aria-label="Toggle Theme" title="Toggle Light / Dark Theme">
+          <svg class="theme-icon-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button type="button" class="nav-icon-btn rtl-toggle" aria-label="Toggle Text Direction" title="Switch Text Direction (RTL / LTR)">
+          <svg class="rtl-icon-svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M16 3l4 4-4 4"/><path d="M20 17H4M8 13l-4 4 4 4"/></svg>
+        </button>
+      </div>
+
+      <!-- Login CTA Button with Same Design as Desktop Navbar CTA in Image -->
+      <a href="login.html" class="nav-login-btn drawer-login-btn" title="Student & Parent Portal Login">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <span>Login</span>
+      </a>
+    </div>
+  </aside>
+  
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <img src="images/image-18.png" alt="Parent academic counseling desk with institute counselors" class="page-hero-bg" loading="eager">
+    <div class="page-hero-overlay"></div>
+    <div class="container">
+      <div class="page-hero-content text-center">
+        <div class="breadcrumb justify-center">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb-sep">/</span>
+          <span>Contact Us</span>
+        </div>
+        <span class="eyebrow" style="color:var(--orange);">DELHI & BENGALURU CAMPUSES • ADMISSIONS OPEN</span>
+        <h1 style="color:var(--white); margin-top:8px;">Contact Admissions & Campus Centers</h1>
+        <p class="lead" style="margin-top:14px; max-width:780px; margin-inline:auto;">
+          Have questions about program eligibility, grade diagnostic testing, or batch timings? Our admissions counselors and subject heads are ready to assist you.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 1: DIRECT CONTACT CHANNELS (Phone, Email, Campuses, Hours with Professional Icons) -->
+  <section class="section section-soft" style="padding-bottom:32px;">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="eyebrow">DIRECT CONTACT CHANNELS</span>
+        <h2>Reach Our Academic Desk Across Channels</h2>
+        <p style="max-width:720px; margin-inline:auto;">
+          Connect directly with our admissions officers, schedule a personalized diagnostic evaluation, or visit our interactive learning campuses.
+        </p>
+      </div>
+
+      <div class="contact-cards-grid">
+        <!-- Phone Support Card -->
+        <div class="contact-info-card">
+          <div class="contact-icon-bubble">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </div>
+          <h3>Phone Inquiries</h3>
+          <p>Direct telephone guidance for grade diagnostic slots and admissions.</p>
+          <div class="contact-primary-val">
+            <a href="tel:+9101149208800" class="contact-highlight-link">+91 (011) 4920-8800</a>
+          </div>
+          <div class="contact-info-lines">
+            <span class="contact-sub-info">Delhi: +91 (011) 4920-8800</span>
+            <span class="contact-sub-info">Bengaluru: +91 (080) 6120-4400</span>
+          </div>
+          <span class="contact-timing-pill">Mon–Sat • 8:30 AM – 7:30 PM</span>
+        </div>
+
+        <!-- Email Admissions Card -->
+        <div class="contact-info-card">
+          <div class="contact-icon-bubble">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <h3>Email Admissions</h3>
+          <p>Submit prior student scorecards or request tailored scholarship criteria.</p>
+          <div class="contact-primary-val">
+            <a href="mailto:admissions@pragyanolympiad.edu.in" class="contact-highlight-link">admissions@pragyan.edu.in</a>
+          </div>
+          <div class="contact-info-lines">
+            <span class="contact-sub-info">Delhi: delhi@pragyan.edu.in</span>
+            <span class="contact-sub-info">Bengaluru: blr@pragyan.edu.in</span>
+          </div>
+          <span class="contact-timing-pill">Guaranteed Response in 2 Hrs</span>
+        </div>
+
+        <!-- Head Centers Card -->
+        <div class="contact-info-card">
+          <div class="contact-icon-bubble">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <h3>Head Centers</h3>
+          <p>Two urban coaching academies with smart lecture halls & testing labs.</p>
+          <div class="contact-primary-val">
+            <span class="contact-highlight-link" style="color:var(--text-dark);">Delhi NCR & Bengaluru</span>
+          </div>
+          <div class="contact-info-lines">
+            <span class="contact-sub-info">Delhi: Pragyan Tower, South Campus</span>
+            <span class="contact-sub-info">Bengaluru: Koramangala Ring Road</span>
+          </div>
+          <a href="#campusMapSection" class="contact-timing-pill" style="text-decoration:none; cursor:pointer;">View Campus Map Below ↓</a>
+        </div>
+
+        <!-- Operating Hours Card -->
+        <div class="contact-info-card">
+          <div class="contact-icon-bubble">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h3>Walk-in Hours</h3>
+          <p>Visit our admissions office in person for campus tours & diagnostic mocks.</p>
+          <div class="contact-primary-val">
+            <span class="contact-highlight-link" style="color:var(--text-dark);">8:30 AM – 7:30 PM</span>
+          </div>
+          <div class="contact-info-lines">
+            <span class="contact-sub-info">Mon – Sat: Regular Admissions</span>
+            <span class="contact-sub-info">Sunday: 9:00 AM – 2:00 PM (Mocks)</span>
+          </div>
+          <span class="contact-timing-pill">Walk-ins Warmly Welcome</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: CONTACT FORM & CAMPUS DETAILS SPLIT -->
+  <section class="section">
+    <div class="container editorial-split">
+      <div>
+        <span class="eyebrow">ENQUIRY FORM</span>
+        <h2 style="margin-top:10px;">Book a Diagnostic Test or Campus Visit</h2>
+        <p style="margin-top:12px; margin-bottom:24px;">
+          Submit your details below to schedule your child's 90-minute Olympiad aptitude evaluation.
+        </p>
+
+        <form id="contactEnquiryForm" class="form-card" data-validate="true">
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label" for="parentName">Parent / Guardian Name *</label>
+              <input type="text" id="parentName" name="parentName" class="form-control" placeholder="e.g. Ramesh Chandra" required>
+              <span class="form-error" id="err-parentName"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="studentName">Student Name *</label>
+              <input type="text" id="studentName" name="studentName" class="form-control" placeholder="e.g. Aditya Chandra" required>
+              <span class="form-error" id="err-studentName"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address *</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="parent@example.com" required>
+              <span class="form-error" id="err-email"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="mobile">Mobile Number (10 digits) *</label>
+              <input type="tel" id="mobile" name="mobile" class="form-control" placeholder="9876543210" required>
+              <span class="form-error" id="err-mobile"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="gradeSelect">Student's Current Grade *</label>
+              <select id="gradeSelect" name="gradeSelect" class="form-control" required>
+                <option value="">Select Grade</option>
+                <option value="1">Grade 1 (Foundation)</option>
+                <option value="2">Grade 2 (Foundation)</option>
+                <option value="3">Grade 3 (Foundation)</option>
+                <option value="4">Grade 4 (Development)</option>
+                <option value="5">Grade 5 (Development)</option>
+                <option value="6">Grade 6 (Development)</option>
+                <option value="7">Grade 7 (Advanced Foundation)</option>
+                <option value="8">Grade 8 (Advanced Foundation)</option>
+                <option value="9">Grade 9 (Competitive Prep)</option>
+                <option value="10">Grade 10 (Competitive Prep)</option>
+              </select>
+              <span class="form-error" id="err-gradeSelect"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="programSelect">Interested Program *</label>
+              <select id="programSelect" name="programSelect" class="form-control" required>
+                <option value="">Select Primary Track</option>
+                <option value="all">Comprehensive 4-Subject Foundation</option>
+                <option value="math">Mathematics Olympiad Specialization</option>
+                <option value="science">Science Olympiad Specialization</option>
+                <option value="reasoning">Logical Reasoning & Mental Ability</option>
+                <option value="english">English Olympiad Specialization</option>
+              </select>
+              <span class="form-error" id="err-programSelect"></span>
+            </div>
+
+            <div class="form-group full">
+              <label class="form-label" for="preferredTime">Preferred Contact Window</label>
+              <select id="preferredTime" name="preferredTime" class="form-control">
+                <option value="morning">Morning (9:30 AM – 12:30 PM)</option>
+                <option value="afternoon">Afternoon (1:30 PM – 4:30 PM)</option>
+                <option value="evening">Evening (5:00 PM – 7:30 PM)</option>
+              </select>
+            </div>
+
+            <div class="form-group full">
+              <label class="form-label" for="message">Specific Questions or Prior Olympiad Scores</label>
+              <textarea id="message" name="message" class="form-control" rows="3" placeholder="Share your child's academic background or specific goals..."></textarea>
+            </div>
+          </div>
+
+          <div style="margin-top:18px;">
+            <button type="submit" class="btn btn-primary" style="width:100%;">Submit Admission Enquiry →</button>
+          </div>
+          <div class="form-status" role="status"></div>
+        </form>
+      </div>
+
+      <div>
+        <span class="eyebrow">CAMPUS INFORMATION</span>
+        <h3 style="margin-top:10px;">National Centers & Office Hours</h3>
+        <div style="margin-top:18px; display:flex; flex-direction:column; gap:16px;">
+          <!-- Delhi NCR Card -->
+          <div class="campus-contact-card card-delhi">
+            <div class="campus-contact-header">
+              <div class="campus-title-wrap">
+                <span class="campus-badge-orange">NATIONAL HEADQUARTERS</span>
+                <h4>Delhi NCR Head Center</h4>
+              </div>
+            </div>
+            <div class="contact-card-detail">
+              <div class="contact-detail-row">
+                <span class="contact-icon-pill">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </span>
+                <span>Pragyan Tower, 42 Institutional Enclave, South Campus Road, New Delhi 110049</span>
+              </div>
+              <div class="contact-detail-row">
+                <span class="contact-icon-pill">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </span>
+                <span>Phone: <a href="tel:+9101149208800" class="contact-link">+91 (011) 4920-8800</a></span>
+              </div>
+              <div class="contact-detail-row">
+                <span class="contact-icon-pill">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </span>
+                <span>Email: <a href="mailto:delhi@pragyanolympiad.edu.in" class="contact-link">delhi@pragyanolympiad.edu.in</a></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bengaluru Campus Card -->
+          <div class="campus-contact-card card-blr">
+            <div class="campus-contact-header">
+              <div class="campus-title-wrap">
+                <span class="campus-badge-dark">SOUTH TECH CAMPUS</span>
+                <h4>Bengaluru Innovation Campus</h4>
+              </div>
+            </div>
+            <div class="contact-card-detail">
+              <div class="contact-detail-row">
+                <span class="contact-icon-pill">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </span>
+                <span>78 Koramangala Industrial Ring Road, 4th Block, Bengaluru 560034</span>
+              </div>
+              <div class="contact-detail-row">
+                <span class="contact-icon-pill">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </span>
+                <span>Phone: <a href="tel:+9108061204400" class="contact-link">+91 (080) 6120-4400</a></span>
+              </div>
+              <div class="contact-detail-row">
+                <span class="contact-icon-pill">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </span>
+                <span>Email: <a href="mailto:blr@pragyanolympiad.edu.in" class="contact-link">blr@pragyanolympiad.edu.in</a></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Administrative Hours Card -->
+          <div class="campus-contact-card card-hours">
+            <div class="campus-contact-header">
+              <div class="campus-title-wrap">
+                <span class="campus-badge-grey">OPERATING HOURS</span>
+                <h4>Administrative & Counseling Hours</h4>
+              </div>
+            </div>
+            <div class="contact-card-detail">
+              <div class="contact-detail-row">
+                <span class="contact-icon-pill">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </span>
+                <span><strong>Monday – Saturday:</strong> 8:30 AM – 7:30 PM</span>
+              </div>
+              <div class="contact-detail-row">
+                <span class="contact-icon-pill">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                </span>
+                <span><strong>Sunday:</strong> 9:00 AM – 2:00 PM (Scheduled Diagnostic Tests Only)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Immediate Guidance Helpdesk Card -->
+          <div class="campus-contact-card" style="border-left:4px solid var(--orange); background:rgba(244,119,33,0.04);">
+            <div class="campus-contact-header">
+              <div class="campus-title-wrap">
+                <span class="campus-badge-orange">INSTANT GUIDANCE</span>
+                <h4>Need Immediate Advice?</h4>
+              </div>
+            </div>
+            <p style="font-size:0.86rem; color:var(--text-muted); margin-top:6px; line-height:1.5;">
+              Our academic counselors assist parents with grade diagnostic slots, curriculum roadmaps, and fee schedules.
+            </p>
+            <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+              <a href="tel:+9101149208800" class="btn btn-primary btn-sm">Direct Call: +91 (011) 4920-8800</a>
+              <a href="#contactFaqSection" class="btn btn-outline-dark btn-sm">Read Admission FAQs ↓</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: CAMPUS MAP & DIRECTIONS SECTION -->
+  <section class="section section-soft" id="campusMapSection">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="eyebrow">CAMPUS REACH & ACCESSIBILITY</span>
+        <h2>Interactive Campus Map & Directions</h2>
+        <p style="max-width:740px; margin-inline:auto;">
+          Visit our modern coaching facilities in New Delhi and Bengaluru. Both campuses are equipped with amphitheater lecture rooms, smart testing suites, and dedicated visitor parking.
+        </p>
+      </div>
+
+      <div class="map-layout-grid">
+        <div class="map-embed-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14018.665386762335!2d77.16524355!3d28.55018695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1df69e46a5b9%3A0x6b8c9d123456789!2sSouth%20Campus%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+            width="100%" 
+            height="440" 
+            style="border:0; display:block;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade" 
+            title="Pragyan Olympiad Academy Campus Map">
+          </iframe>
+          <div class="map-live-tag">
+            <span class="live-dot"></span>
+            <span>Pragyan Tower • South Campus Road • Open Today for Walk-ins</span>
+          </div>
+        </div>
+
+        <div class="map-location-sidebar">
+          <!-- Delhi Navigation Card -->
+          <div class="location-nav-card is-active">
+            <div class="location-nav-badge">NATIONAL HEADQUARTERS</div>
+            <h4>Delhi NCR Center</h4>
+            <p class="location-nav-addr">
+              Pragyan Tower, 42 Institutional Enclave, South Campus Road, New Delhi 110049
+            </p>
+            <div class="transit-info-list">
+              <div class="transit-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="16" rx="2"/><line x1="4" y1="11" x2="20" y2="11"/><line x1="9" y1="19" x2="7" y2="22"/><line x1="15" y1="19" x2="17" y2="22"/></svg>
+                <span>Durgabai Deshmukh South Campus Metro: <strong>350m walk</strong></span>
+              </div>
+              <div class="transit-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+                <span>Free on-site parking for visiting parents</span>
+              </div>
+            </div>
+            <div class="location-actions">
+              <a href="https://maps.google.com/?q=South+Campus+New+Delhi" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark btn-sm">Get Driving Directions ↗</a>
+              <a href="tel:+9101149208800" class="btn btn-primary btn-sm">Call Center</a>
+            </div>
+          </div>
+
+          <!-- Bengaluru Navigation Card -->
+          <div class="location-nav-card">
+            <div class="location-nav-badge" style="background:rgba(36,36,36,0.08); color:var(--black);">SOUTH CAMPUS</div>
+            <h4>Bengaluru Innovation Hub</h4>
+            <p class="location-nav-addr">
+              78 Koramangala Industrial Ring Road, 4th Block, Bengaluru 560034
+            </p>
+            <div class="transit-info-list">
+              <div class="transit-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="16" rx="2"/><line x1="4" y1="11" x2="20" y2="11"/><line x1="9" y1="19" x2="7" y2="22"/><line x1="15" y1="19" x2="17" y2="22"/></svg>
+                <span>Near Sony World Signal / Koramangala 4th Block Club</span>
+              </div>
+              <div class="transit-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+                <span>Dedicated student drop-off & diagnostic testing bay</span>
+              </div>
+            </div>
+            <div class="location-actions">
+              <a href="https://maps.google.com/?q=Koramangala+Bengaluru" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark btn-sm">Get Driving Directions ↗</a>
+              <a href="tel:+9108061204400" class="btn btn-primary btn-sm">Call Center</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: FREQUENTLY ASKED QUESTIONS (Below Map Section) -->
+  <section class="section" id="contactFaqSection">
+    <div class="container" style="max-width:860px;">
+      <div class="section-head text-center">
+        <span class="eyebrow">COMMON ADMISSION QUERIES</span>
+        <h2>Frequently Asked Questions</h2>
+        <p style="max-width:680px; margin-inline:auto;">
+          Clear, transparent answers to help parents and scholars choose the right foundation roadmap and examination schedule.
+        </p>
+      </div>
+
+      <div class="accordion" data-single="true" style="margin-top:32px;">
+        <!-- Question 1 -->
+        <div class="accordion-item is-open">
+          <button class="accordion-trigger" type="button" aria-expanded="true">
+            <span>What does the 90-minute diagnostic evaluation cover?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <div class="accordion-panel">
+            <p>
+              The 90-minute test evaluates numerical agility, pattern recognition, spatial reasoning, and conceptual comprehension appropriate for the child's grade, generating a comprehensive 6-page aptitude diagnostic scorecard.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="accordion-item">
+          <button class="accordion-trigger" type="button" aria-expanded="false">
+            <span>Are weekend and weekday evening batches available?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <div class="accordion-panel">
+            <p>
+              Yes. We offer both Weekend Cohorts (Saturday–Sunday) and Weekday Evening Batches (Tue–Thu–Fri, 5:00 PM – 7:30 PM) to ensure zero conflict with standard school schedules.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="accordion-item">
+          <button class="accordion-trigger" type="button" aria-expanded="false">
+            <span>How are students placed into competitive cohorts?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <div class="accordion-panel">
+            <p>
+              Following the baseline evaluation, students enter peer-matched cohorts: <em>Foundation Sprint</em> (core conceptual axioms), <em>State Olympiad Cohort</em> (timed problem solving), and <em>National Achievers Circle</em> (advanced non-routine proofs). Cohorts are recalibrated quarterly.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="accordion-item">
+          <button class="accordion-trigger" type="button" aria-expanded="false">
+            <span>Can parents observe live classes or meet faculty mentors?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <div class="accordion-panel">
+            <p>
+              Yes. Prospective parents may attend scheduled open classroom lectures. For enrolled scholars, we conduct monthly parent-educator conferences with metric scorecards, and parents can schedule 1-on-1 consultations with Subject Heads anytime.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="accordion-item">
+          <button class="accordion-trigger" type="button" aria-expanded="false">
+            <span>What study materials and digital portal resources are provided?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <div class="accordion-panel">
+            <p>
+              Enrolled scholars receive printed visual concept modules, 18-year solved past Olympiad archives (IMO, NSO, PRMO, IEO), 3-tier graded question banks, and unlimited 24/7 access to our Digital Learning Portal with 1,500+ printable worksheets and mock tests.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-cta-box text-center" style="margin-top:36px; padding:24px; background:var(--bg-soft); border-radius:var(--radius-md); border:1px solid var(--border-color);">
+        <p style="font-size:0.92rem; color:var(--text-muted); margin-bottom:12px;">
+          Have additional queries regarding admission criteria or scholarships? Our senior academic counselors are here to help.
+        </p>
+        <div class="btn-group justify-center">
+          <a href="tel:+9101149208800" class="btn btn-primary btn-sm">Call Academic Desk: +91 (011) 4920-8800</a>
+          <a href="mailto:admissions@pragyanolympiad.edu.in" class="btn btn-outline-dark btn-sm">Email Admissions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-logo" style="margin-bottom:16px;">
+            <img src="images/logo.png" alt="Pragyan Olympiad Academy Logo" class="brand-logo-img" style="height:44px; width:auto;">
+            <div class="brand-logo-text">
+              <span class="brand-name" style="color:var(--white);">PRAGYAN</span>
+              <span class="brand-sub">Olympiad Academy</span>
+            </div>
+          </div>
+          <p style="font-size:0.88rem; line-height:1.65; margin-bottom:16px;">
+            A premier academic coaching institute specializing in Mathematics Olympiad, Science Olympiad, Logical Reasoning, and competitive foundation training for Grades 1 through 10.
+          </p>
+          <div class="demo-badge">Verified Academic Curriculum Framework</div>
+          <div class="footer-social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram" title="Follow us on Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook" title="Follow us on Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="X (Twitter)" title="Follow us on X">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+              </svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="YouTube" title="Subscribe on YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"></polygon>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-heading">Olympiad Programs</div>
+          <ul class="footer-links">
+            <li><a href="mathematics.html">Mathematics Olympiad (IMO / NMTC)</a></li>
+            <li><a href="science.html">Science Olympiad (NSO / IJSO)</a></li>
+            <li><a href="reasoning.html">Logical Reasoning & Mental Ability</a></li>
+            <li><a href="english.html">English Olympiad (IEO)</a></li>
+            <li><a href="grades.html">Grade-Wise Learning (1–10)</a></li>
+            <li><a href="methodology.html">Concept-Based Methodology</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-heading">Student & Parents</div>
+          <ul class="footer-links">
+            <li><a href="results.html">Results & Medal Achievers</a></li>
+            <li><a href="success-stories.html">Student Success Stories</a></li>
+            <li><a href="faculty.html">Distinguished Faculty</a></li>
+            <li><a href="resources.html">Study Worksheets & Papers</a></li>
+            <li><a href="dashboard.html">Student Learning Portal</a></li>
+            <li><a href="practice-tests.html">Online Mock Test Engine</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-heading">Academic Centers</div>
+          <p style="font-size:0.86rem; color:var(--text-on-dark-muted); margin-bottom:12px;">
+            <strong>National Headquarters:</strong><br>
+            Pragyan Tower, 42 Institutional Enclave, South Campus Road, New Delhi 110049
+          </p>
+          <p style="font-size:0.86rem; color:var(--text-on-dark-muted); margin-bottom:16px;">
+            <strong>Enquiry Helpline:</strong> +91 (011) 4920-8800<br>
+            <strong>Admissions Email:</strong> admissions@pragyanolympiad.edu.in
+          </p>
+          <a href="contact.html" class="btn btn-outline-light btn-sm">Schedule Campus Visit →</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Pragyan Olympiad Foundation Coaching Center. All rights reserved. Professional Academic Portal.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="about.html">About Institution</a>
+          <a href="contact.html">Privacy & Academic Standards</a>
+          <a href="login.html">Student Portal Login</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+  
+
+  <!-- DROP TO TOP (SCROLL TO TOP) BUTTON -->
+  <button type="button" id="backToTopBtn" class="back-to-top-btn" aria-label="Scroll to top" title="Drop to top">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+</body>
+</html>

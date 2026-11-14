@@ -602,19 +602,21 @@ p {
 }
 
 .mega-intro {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: #151515;
+  color: #FFFFFF;
   padding: 24px;
   border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 .mega-intro h4 {
-  color: var(--white);
+  color: #FFFFFF;
   margin-bottom: 8px;
 }
 .mega-intro p {
   font-size: 0.88rem;
-  color: var(--text-on-dark-muted);
+  color: #CBD5E1;
   margin-bottom: 16px;
+  line-height: 1.55;
 }
 
 .mega-links-grid {
@@ -4571,7 +4573,38 @@ body.standalone-portal .portal-shell {
   border-color: var(--orange);
 }
 [data-theme="dark"] .mega-card-title {
-  color: #FFFFFF;
+  color: #FFFFFF !important;
+}
+[data-theme="dark"] .mega-card-desc {
+  color: #94A3B8 !important;
+}
+[data-theme="dark"] .mega-card-link:hover .mega-card-desc {
+  color: #CBD5E1 !important;
+}
+[data-theme="dark"] .mega-intro {
+  background: linear-gradient(135deg, #20222B 0%, #171821 100%) !important;
+  border: 1px solid rgba(244, 119, 33, 0.35) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+}
+[data-theme="dark"] .mega-intro h4 {
+  color: #FFFFFF !important;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+}
+[data-theme="dark"] .mega-intro p {
+  color: #CBD5E1 !important;
+}
+[data-theme="dark"] .mega-intro .eyebrow {
+  color: #FFA25C !important;
+}
+[data-theme="dark"] .mega-intro .btn-primary {
+  background-color: var(--orange) !important;
+  color: #FFFFFF !important;
+  border-color: var(--orange) !important;
+}
+[data-theme="dark"] .mega-intro .btn-primary:hover {
+  background-color: var(--orange-deep) !important;
+  color: #FFFFFF !important;
 }
 [data-theme="dark"] .program-card,
 [data-theme="dark"] .faculty-card,

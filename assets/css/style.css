@@ -1222,8 +1222,8 @@ p {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  background-color: var(--black);
-  color: var(--white);
+  background-color: #151515;
+  color: #FFFFFF;
   padding: clamp(10px, 1.5vh, 16px) clamp(14px, 1.8vw, 22px);
   border-radius: var(--radius-md);
   margin: -26px 16px 0;
@@ -1241,8 +1241,13 @@ p {
 
 .floating-stat-label {
   font-size: 0.8rem;
-  color: var(--text-on-dark-muted);
+  color: #D6D6D2;
   margin-top: 3px;
+}
+
+.floating-stat-divider {
+  border-left: 1px solid rgba(255, 255, 255, 0.18);
+  padding-left: 18px;
 }
 
 /* Academic Excellence Stats Band */
@@ -1883,8 +1888,8 @@ p {
   right: 0;
   bottom: 0;
   padding: 20px 22px 16px;
-  background: linear-gradient(to top, rgba(21, 21, 21, 0.90) 0%, rgba(21, 21, 21, 0) 100%);
-  color: var(--white);
+  background: linear-gradient(to top, rgba(16, 17, 22, 0.94) 0%, rgba(16, 17, 22, 0) 100%);
+  color: #FFFFFF;
 }
 .gallery-caption span {
   display: block;
@@ -1897,6 +1902,8 @@ p {
 .gallery-caption strong {
   font-family: var(--font-display);
   font-size: 1rem;
+  color: #FFFFFF;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
 }
 
 /* Testimonials Interactive Showcase */
@@ -5270,6 +5277,45 @@ body.standalone-portal .portal-shell {
   border-color: #FFFFFF !important;
 }
 
+/* Floating Stat Card in Dark Theme */
+[data-theme="dark"] .floating-stat-card {
+  background-color: #181A22 !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(244, 119, 33, 0.45) !important;
+  border-left: 4px solid var(--orange) !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.75), 0 0 24px rgba(244, 119, 33, 0.16) !important;
+}
+[data-theme="dark"] .floating-stat-val {
+  color: #FFA25C !important;
+  text-shadow: 0 0 14px rgba(244, 119, 33, 0.45) !important;
+}
+[data-theme="dark"] .floating-stat-label {
+  color: #FFFFFF !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.85) !important;
+  font-weight: 500 !important;
+}
+[data-theme="dark"] .floating-stat-divider,
+[data-theme="dark"] .floating-stat-card > div[style*="border-left"] {
+  border-left-color: rgba(244, 119, 33, 0.4) !important;
+}
+
+/* Asymmetric Gallery Captions in Dark Theme */
+[data-theme="dark"] .gallery-caption {
+  background: linear-gradient(to top, rgba(14, 15, 20, 0.96) 0%, rgba(14, 15, 20, 0) 100%) !important;
+  color: #FFFFFF !important;
+}
+[data-theme="dark"] .gallery-caption span {
+  color: #FFA25C !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9) !important;
+}
+[data-theme="dark"] .gallery-caption strong {
+  color: #FFFFFF !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95) !important;
+}
+[data-theme="dark"] .editorial-caption-bar span {
+  color: #FFFFFF !important;
+}
+
 [data-theme="dark"] .page-hero {
   background-color: #07090E;
   border-bottom-color: rgba(255, 255, 255, 0.08);
@@ -5544,6 +5590,30 @@ body.standalone-portal .portal-shell {
 
 [dir="rtl"][data-theme="dark"] .campus-contact-card.card-hours {
   border-right-color: #444444;
+}
+
+[dir="rtl"] .floating-stat-card {
+  border-left: none !important;
+  border-right: 4px solid var(--orange) !important;
+}
+
+[dir="rtl"] .floating-stat-divider,
+[dir="rtl"] .floating-stat-card > div[style*="border-left"] {
+  border-left: none !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.18) !important;
+  padding-left: 0 !important;
+  padding-right: 18px !important;
+}
+
+[dir="rtl"][data-theme="dark"] .floating-stat-card {
+  border-left: 1px solid rgba(244, 119, 33, 0.45) !important;
+  border-right: 4px solid var(--orange) !important;
+}
+
+[dir="rtl"][data-theme="dark"] .floating-stat-divider,
+[dir="rtl"][data-theme="dark"] .floating-stat-card > div[style*="border-left"] {
+  border-left: none !important;
+  border-right: 1px solid rgba(244, 119, 33, 0.4) !important;
 }
 
 /* ============================================================================

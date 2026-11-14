@@ -39,7 +39,7 @@ function generateIndex() {
             <div class="floating-stat-val">1,240+</div>
             <div class="floating-stat-label">National & State Medals</div>
           </div>
-          <div style="border-left:1px solid rgba(255,255,255,0.18); padding-left:18px;">
+          <div class="floating-stat-divider" style="border-left:1px solid rgba(255,255,255,0.18); padding-left:18px;">
             <div class="floating-stat-val">99.4%</div>
             <div class="floating-stat-label">Parent Satisfaction Index</div>
           </div>

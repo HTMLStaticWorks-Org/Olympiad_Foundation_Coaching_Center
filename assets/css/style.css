@@ -4318,8 +4318,23 @@ body.standalone-portal .portal-shell {
   width: 100% !important;
 }
 
-/* Dashboard Batch Card Actions: One-by-One Buttons at 900px and Below */
+/* Dashboard Programs Section & Card Header: One-by-One Alignment at 900px and Below (Mobile & 768px Tablet) */
 @media (max-width: 900px) {
+  .dashboard-programs-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .batch-card-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
+    margin-bottom: 10px !important;
+  }
+  .batch-card-header .badge {
+    white-space: nowrap !important;
+  }
+  .batch-card-header .batch-code {
+    white-space: nowrap !important;
+  }
   .batch-card-actions {
     flex-direction: column !important;
     gap: 10px !important;
@@ -4334,6 +4349,21 @@ body.standalone-portal .portal-shell {
 
 /* Tablet View (768px): Prevent Collisions & Pin Card Footers to Same Horizontal Line */
 @media (min-width: 768px) and (max-width: 880px) {
+  .dashboard-programs-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .batch-card-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
+    margin-bottom: 10px !important;
+  }
+  .batch-card-header .badge {
+    white-space: nowrap !important;
+  }
+  .batch-card-header .batch-code {
+    white-space: nowrap !important;
+  }
   .grid-3x2 {
     align-items: stretch !important;
   }
@@ -4526,6 +4556,20 @@ body.standalone-portal .portal-shell {
     text-align: center !important;
     justify-content: center !important;
     display: flex !important;
+  }
+
+  /* Batch Card Header: One-by-One Alignment in All Mobile Views */
+  .batch-card-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
+    margin-bottom: 10px !important;
+  }
+  .batch-card-header .badge {
+    white-space: nowrap !important;
+  }
+  .batch-card-header .batch-code {
+    white-space: nowrap !important;
   }
 
   /* Card Section One-by-One Alignment in All Mobile Views */

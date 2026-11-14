@@ -1038,13 +1038,13 @@ function generateDashboard() {
         </div>
 
         <!-- 4 PROGRAM CARDS -->
-        <div class="grid-2x2">
+        <div class="grid-2x2 dashboard-programs-grid">
           <!-- Program 1 -->
           <div class="portal-panel" style="display:flex; flex-direction:column; justify-content:space-between; gap:16px;">
             <div>
-              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+              <div class="batch-card-header" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
                 <span class="badge" style="background:rgba(255,94,14,0.12); color:var(--orange-deep); font-weight:700;">PRIMARY OLYMPIAD TRACK</span>
-                <span style="font-size:0.75rem; color:var(--text-muted);">Batch #DEL-2026-M8</span>
+                <span class="batch-code" style="font-size:0.75rem; color:var(--text-muted);">Batch #DEL-2026-M8</span>
               </div>
               <h3 style="font-size:1.25rem;">PRMO & Pre-RMO Foundation Batch (Grade 8 Elite)</h3>
               <p style="font-size:0.86rem; color:var(--text-muted); margin-top:6px;">
@@ -1071,9 +1071,9 @@ function generateDashboard() {
           <!-- Program 2 -->
           <div class="portal-panel" style="display:flex; flex-direction:column; justify-content:space-between; gap:16px;">
             <div>
-              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+              <div class="batch-card-header" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
                 <span class="badge" style="background:rgba(31,138,76,0.12); color:var(--success); font-weight:700;">SCIENCE SPECIALIZATION</span>
-                <span style="font-size:0.75rem; color:var(--text-muted);">Batch #DEL-2026-S8</span>
+                <span class="batch-code" style="font-size:0.75rem; color:var(--text-muted);">Batch #DEL-2026-S8</span>
               </div>
               <h3 style="font-size:1.25rem;">NSO National Science Olympiad Accelerator</h3>
               <p style="font-size:0.86rem; color:var(--text-muted); margin-top:6px;">
@@ -1100,9 +1100,9 @@ function generateDashboard() {
           <!-- Program 3 -->
           <div class="portal-panel" style="display:flex; flex-direction:column; justify-content:space-between; gap:16px;">
             <div>
-              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+              <div class="batch-card-header" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
                 <span class="badge" style="background:rgba(217,119,6,0.12); color:var(--warning); font-weight:700;">SPEED & LOGIC BENCHMARK</span>
-                <span style="font-size:0.75rem; color:var(--text-muted);">Batch #PAN-2026-R8</span>
+                <span class="batch-code" style="font-size:0.75rem; color:var(--text-muted);">Batch #PAN-2026-R8</span>
               </div>
               <h3 style="font-size:1.25rem;">Mental Ability & Logical Reasoning Masterclass</h3>
               <p style="font-size:0.86rem; color:var(--text-muted); margin-top:6px;">
@@ -1129,9 +1129,9 @@ function generateDashboard() {
           <!-- Program 4 -->
           <div class="portal-panel" style="display:flex; flex-direction:column; justify-content:space-between; gap:16px;">
             <div>
-              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+              <div class="batch-card-header" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
                 <span class="badge" style="background:rgba(0,102,204,0.12); color:#0066CC; font-weight:700;">LANGUAGE & SYNTAX</span>
-                <span style="font-size:0.75rem; color:var(--text-muted);">Batch #DEL-2026-E8</span>
+                <span class="batch-code" style="font-size:0.75rem; color:var(--text-muted);">Batch #DEL-2026-E8</span>
               </div>
               <h3 style="font-size:1.25rem;">International English Olympiad (IEO) Achievers Sprint</h3>
               <p style="font-size:0.86rem; color:var(--text-muted); margin-top:6px;">

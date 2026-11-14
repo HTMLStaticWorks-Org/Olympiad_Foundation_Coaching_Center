@@ -4289,6 +4289,22 @@ body.standalone-portal .portal-shell {
   }
 }
 
+/* Tablet View (768px): Prevent Text & Button Collisions in Card Section */
+@media (min-width: 768px) and (max-width: 880px) {
+  .resource-item-card .card-footer-action,
+  .program-card .card-footer-action,
+  .card-footer-action {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+  }
+  .card-footer-action .btn {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+}
+
 @media (max-width: 767px) {
   .container {
     padding-inline: 18px;
@@ -4432,6 +4448,36 @@ body.standalone-portal .portal-shell {
   .benefit-row h4,
   .benefit-row p {
     text-align: center !important;
+  }
+
+  /* Filter Buttons One-by-One Alignment in All Mobile Views Alone */
+  .filter-bar {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    gap: 10px !important;
+  }
+  .filter-bar .filter-pill,
+  .filter-bar .resource-filter-btn {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+    display: flex !important;
+  }
+
+  /* Card Section One-by-One Alignment in All Mobile Views */
+  .resource-item-card .card-footer-action,
+  .program-card .card-footer-action,
+  .card-footer-action {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+  }
+  .card-footer-action .btn,
+  .card-footer-action .btn-link {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
   }
 
   /* Footer Section One-by-One and Centered in All Mobile Views */

@@ -1907,15 +1907,17 @@ p {
   align-items: stretch;
 }
 .testimonial-spotlight {
-  background-color: var(--black);
-  color: var(--white);
+  background: linear-gradient(145deg, #181920 0%, #121318 100%);
+  color: #FFFFFF;
   border-radius: var(--radius-lg);
   padding: 36px 38px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-bottom: 4px solid var(--orange);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.25);
 }
 .testimonial-quote-mark {
   font-family: var(--font-display);
@@ -1926,7 +1928,7 @@ p {
 .testimonial-quote-text {
   font-size: 1.2rem;
   line-height: 1.65;
-  color: var(--white);
+  color: #FFFFFF;
   font-weight: 500;
 }
 .testimonial-author-row {
@@ -4811,8 +4813,45 @@ body.standalone-portal .portal-shell {
 [data-theme="dark"] .alt-testimonial-card .author-name,
 [data-theme="dark"] .author-name,
 [data-theme="dark"] .testimonial-author,
-[data-theme="dark"] .testimonial-stage strong {
+[data-theme="dark"] .testimonial-stage strong,
+[data-theme="dark"] #spotlightAuthor {
   color: #FFFFFF !important;
+}
+[data-theme="dark"] .testimonial-spotlight {
+  background: linear-gradient(145deg, #1A1C24 0%, #13141B 100%) !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(244, 119, 33, 0.35) !important;
+  border-bottom: 4px solid var(--orange) !important;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.65), 0 0 28px rgba(244, 119, 33, 0.12) !important;
+}
+[data-theme="dark"] .testimonial-quote-text,
+[data-theme="dark"] #spotlightQuote {
+  color: #F8FAFC !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+[data-theme="dark"] #spotlightMeta {
+  color: #CBD5E1 !important;
+}
+[data-theme="dark"] .testimonial-quote-mark {
+  color: #FFA25C !important;
+}
+[data-theme="dark"] .testimonial-tab {
+  background-color: #1A1A1A !important;
+  border-color: #2E2E2E !important;
+}
+[data-theme="dark"] .testimonial-tab:hover,
+[data-theme="dark"] .testimonial-tab.is-active {
+  background-color: rgba(244, 119, 33, 0.18) !important;
+  border-color: var(--orange) !important;
+}
+[data-theme="dark"] .testimonial-tab strong {
+  color: #FFFFFF !important;
+}
+[data-theme="dark"] .testimonial-tab span {
+  color: #CBD5E1 !important;
+}
+[data-theme="dark"] .testimonial-tab span[style*="var(--orange)"] {
+  color: #FFA25C !important;
 }
 [data-theme="dark"] .alt-testimonial-card .author-role,
 [data-theme="dark"] .author-role,

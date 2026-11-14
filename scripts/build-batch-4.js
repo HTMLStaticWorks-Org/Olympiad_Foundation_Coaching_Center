@@ -1168,7 +1168,7 @@ function generateDashboard() {
         </div>
 
         <!-- 4 LIVE / SCHEDULED MOCK TESTS -->
-        <div class="portal-test-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:20px; margin-bottom:32px;">
+        <div class="portal-test-grid">
           <!-- Test 1 -->
           <div class="portal-panel portal-test-card" style="border-top:3.5px solid var(--orange);">
             <div>
@@ -1178,7 +1178,7 @@ function generateDashboard() {
               </div>
               <h3 style="font-size:1.15rem; margin-bottom:6px;">All-India IMO Mock Benchmark #05</h3>
               <p style="font-size:0.84rem; color:var(--text-muted); margin-bottom:12px;">30 Non-Routine Olympiad Questions • Euclidean Geometry, Polynomials & Modulo Arithmetic.</p>
-              <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--text-muted); margin-bottom:14px; background:var(--bg-soft); padding:8px 12px; border-radius:6px;">
+              <div class="test-card-meta" style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--text-muted); margin-bottom:14px; background:var(--bg-soft); padding:8px 12px; border-radius:6px;">
                 <span><strong>Duration:</strong> 60 Mins</span>
                 <span><strong>Marking:</strong> +3 / -1</span>
                 <span><strong>Questions:</strong> 30</span>
@@ -1196,7 +1196,7 @@ function generateDashboard() {
               </div>
               <h3 style="font-size:1.15rem; margin-bottom:6px;">NSEJS Physics Rapid Diagnostic #03</h3>
               <p style="font-size:0.84rem; color:var(--text-muted); margin-bottom:12px;">25 Problems • Geometric Optics, Vector Kinematics & Energy Work Theorems.</p>
-              <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--text-muted); margin-bottom:14px; background:var(--bg-soft); padding:8px 12px; border-radius:6px;">
+              <div class="test-card-meta" style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--text-muted); margin-bottom:14px; background:var(--bg-soft); padding:8px 12px; border-radius:6px;">
                 <span><strong>Duration:</strong> 45 Mins</span>
                 <span><strong>Marking:</strong> +4 / -1</span>
                 <span><strong>Questions:</strong> 25</span>
@@ -1214,7 +1214,7 @@ function generateDashboard() {
               </div>
               <h3 style="font-size:1.15rem; margin-bottom:6px;">Logical Reasoning Benchmark 4</h3>
               <p style="font-size:0.84rem; color:var(--text-muted); margin-bottom:12px;">35 Matrix & Spatial Reasoning Benchmarks • Non-verbal figure analysis.</p>
-              <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--text-muted); margin-bottom:14px; background:var(--bg-soft); padding:8px 12px; border-radius:6px;">
+              <div class="test-card-meta" style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--text-muted); margin-bottom:14px; background:var(--bg-soft); padding:8px 12px; border-radius:6px;">
                 <span><strong>Duration:</strong> 50 Mins</span>
                 <span><strong>Marking:</strong> +1 / 0</span>
                 <span><strong>Questions:</strong> 35</span>
@@ -1232,7 +1232,7 @@ function generateDashboard() {
               </div>
               <h3 style="font-size:1.15rem; margin-bottom:6px;">PRMO Number Theory Problem Set B</h3>
               <p style="font-size:0.84rem; color:var(--text-muted); margin-bottom:12px;">15 Deep Challenge Proofs • Modular arithmetic & Chinese Remainder Theorem.</p>
-              <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--text-muted); margin-bottom:14px; background:var(--bg-soft); padding:8px 12px; border-radius:6px;">
+              <div class="test-card-meta" style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--text-muted); margin-bottom:14px; background:var(--bg-soft); padding:8px 12px; border-radius:6px;">
                 <span><strong>Duration:</strong> 45 Mins</span>
                 <span><strong>Marking:</strong> Subjective</span>
                 <span><strong>Questions:</strong> 15</span>

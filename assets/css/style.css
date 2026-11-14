@@ -4412,15 +4412,21 @@ body.standalone-portal .portal-shell {
     gap: 20px;
   }
 
-  /* Benefit Row (Why Parents Choose Our Academy): One-by-One Logo/Icon and Text Alignment in All Mobile Views */
+  /* Benefit Row (Why Parents Choose Our Academy): One-by-One Center-Aligned Icons & Content in All Mobile Views */
   .benefit-row {
     flex-direction: column !important;
-    align-items: flex-start !important;
+    align-items: center !important;
+    text-align: center !important;
     gap: 16px !important;
     padding: 24px 20px !important;
   }
   .benefit-icon-box {
+    margin-inline: auto !important;
     margin-bottom: 2px;
+  }
+  .benefit-row h4,
+  .benefit-row p {
+    text-align: center !important;
   }
 
   /* Footer Section One-by-One and Centered in All Mobile Views */

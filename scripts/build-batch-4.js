@@ -1800,7 +1800,7 @@ function generatePracticeTests() {
           <h1>All-India Olympiad Foundation Mock Test</h1>
           <p style="font-size:0.92rem; color:var(--text-muted);">Simulated timed test calibrated with auto-scoring and detailed cognitive explanations.</p>
         </div>
-        <div style="background-color:var(--black); color:#FFFFFF; padding:10px 22px; border-radius:var(--radius-md); display:flex; align-items:center; gap:12px;">
+        <div class="exam-timer-box">
           <span style="font-size:0.78rem; text-transform:uppercase; font-weight:800; color:var(--orange);">Time Remaining:</span>
           <span id="examTimer" style="font-family:var(--font-display); font-size:1.4rem; font-weight:800; color:#FFFFFF;">20:00</span>
         </div>
@@ -1824,7 +1824,7 @@ function generatePracticeTests() {
         </div>
 
         <div style="min-height:120px;">
-          <h2 id="examQText" style="font-size:1.25rem; line-height:1.5; font-weight:700; color:var(--black);">
+          <h2 id="examQText" style="font-size:1.25rem; line-height:1.5; font-weight:700;">
             Loading question...
           </h2>
         </div>

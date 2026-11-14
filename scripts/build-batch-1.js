@@ -557,25 +557,6 @@ function generateHome2() {
           <a href="practice-tests.html" class="btn btn-outline hero-h2-secondary-btn">Attempt Practice Tests</a>
         </div>
       </div>
-
-      <div class="hero-h2-glass">
-        <div>
-          <div class="glass-stat-val">12,500+</div>
-          <div class="glass-stat-lbl">Mock Tests Conducted Annually</div>
-        </div>
-        <div>
-          <div class="glass-stat-val">94.2%</div>
-          <div class="glass-stat-lbl">Score Improvement Rate</div>
-        </div>
-        <div>
-          <div class="glass-stat-val">4.9 / 5.0</div>
-          <div class="glass-stat-lbl">Mentor Teaching Rating</div>
-        </div>
-        <div>
-          <div class="glass-stat-val">100%</div>
-          <div class="glass-stat-lbl">Detailed Diagnostic Reports</div>
-        </div>
-      </div>
     </div>
   </section>
 

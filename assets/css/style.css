@@ -1977,29 +1977,46 @@ p {
   min-height: calc(100dvh - var(--header-height));
   display: flex;
   align-items: center;
-  padding-block: clamp(28px, 4.5vh, 52px);
+  justify-content: center;
+  padding-block: clamp(48px, 8vh, 88px);
   background-color: #FAF8F5;
   color: var(--text-main);
   overflow: hidden;
   border-bottom: 1px solid var(--grey-light);
   box-sizing: border-box;
 }
+
+@keyframes heroMoveFrontBack {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.12);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .hero-h2-bg {
   position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+  inset: -6%;
+  width: 112%;
+  height: 112%;
   object-fit: cover;
   object-position: center 30%;
   opacity: 0.85;
   filter: brightness(1.06) saturate(1.12);
   z-index: 0;
   pointer-events: none;
+  animation: heroMoveFrontBack 12s ease-in-out infinite;
+  transform-origin: center center;
+  will-change: transform;
 }
 .hero-h2-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(95deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.62) 52%, rgba(255, 255, 255, 0.18) 100%);
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.86) 100%);
   z-index: 1;
   pointer-events: none;
 }
@@ -2007,22 +2024,34 @@ p {
   position: relative;
   z-index: 2;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1.22fr 0.78fr;
-  gap: clamp(28px, 4vw, 48px);
+  max-width: 900px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .hero-h2-copy {
   display: flex;
   flex-direction: column;
-  gap: clamp(12px, 1.8vh, 18px);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-inline: auto;
+  max-width: 840px;
+  gap: clamp(14px, 2vh, 22px);
+}
+.hero-h2-copy .demo-badge {
+  margin-inline: auto;
 }
 .hero-h2-copy h1 {
-  font-size: clamp(2.15rem, 3.6vw, 3.35rem);
-  line-height: 1.14;
+  font-size: clamp(2.35rem, 4.2vw, 3.65rem);
+  line-height: 1.15;
   color: #111111;
   font-weight: 800;
   letter-spacing: -0.02em;
+  text-align: center;
 }
 .hero-h2-copy h1 span {
   color: var(--orange);
@@ -2032,11 +2061,21 @@ p {
   display: inline-block;
 }
 .hero-h2-copy .lead {
-  font-size: clamp(0.92rem, 1.1vw, 1.05rem);
-  line-height: 1.62;
+  font-size: clamp(0.96rem, 1.2vw, 1.12rem);
+  line-height: 1.68;
   color: #2D2D2D;
   font-weight: 500;
-  max-width: 640px;
+  max-width: 720px;
+  text-align: center;
+  margin-inline: auto;
+}
+.hero-h2-copy .btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-inline: auto;
 }
 .hero-h2-secondary-btn {
   border-color: var(--charcoal);
@@ -2046,32 +2085,6 @@ p {
   background-color: var(--black);
   color: var(--white);
 }
-.hero-h2-glass {
-  background: rgba(255, 255, 255, 0.86);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(255, 255, 255, 0.95);
-  border-radius: var(--radius-lg);
-  padding: clamp(22px, 3vh, 32px);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(16px, 2.2vh, 22px);
-  box-shadow: 0 14px 34px rgba(21, 21, 21, 0.08);
-}
-.glass-stat-val {
-  font-family: var(--font-display);
-  font-size: clamp(1.6rem, 2.3vw, 2rem);
-  font-weight: 800;
-  color: var(--orange-deep);
-  line-height: 1.1;
-}
-.glass-stat-lbl {
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--charcoal);
-  margin-top: 4px;
-  line-height: 1.35;
-}
 
 /* Dark mode overrides for Home 2 hero */
 [data-theme="dark"] .hero-h2 {
@@ -2080,11 +2093,11 @@ p {
   border-bottom-color: rgba(255, 255, 255, 0.08);
 }
 [data-theme="dark"] .hero-h2-bg {
-  opacity: 0.45;
-  filter: brightness(0.9) saturate(1.05);
+  opacity: 0.42;
+  filter: brightness(0.88) saturate(1.08);
 }
 [data-theme="dark"] .hero-h2-overlay {
-  background: linear-gradient(95deg, rgba(20, 20, 20, 0.94) 0%, rgba(20, 20, 20, 0.76) 55%, rgba(20, 20, 20, 0.40) 100%);
+  background: radial-gradient(circle at center, rgba(16, 18, 24, 0.72) 0%, rgba(16, 18, 24, 0.90) 100%);
 }
 [data-theme="dark"] .hero-h2-copy h1 {
   color: #FFFFFF;
@@ -2096,7 +2109,7 @@ p {
   -webkit-text-fill-color: transparent;
 }
 [data-theme="dark"] .hero-h2-copy .lead {
-  color: rgba(255, 255, 255, 0.78);
+  color: rgba(255, 255, 255, 0.82);
 }
 [data-theme="dark"] .hero-h2-secondary-btn {
   border-color: rgba(255, 255, 255, 0.35);
@@ -2106,21 +2119,13 @@ p {
   background-color: var(--white);
   color: var(--black);
 }
-[data-theme="dark"] .hero-h2-glass {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.16);
-  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.4);
-}
-[data-theme="dark"] .glass-stat-lbl {
-  color: rgba(255, 255, 255, 0.72);
-}
 
 /* RTL overrides for Home 2 hero */
 [dir="rtl"] .hero-h2-overlay {
-  background: linear-gradient(265deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.62) 52%, rgba(255, 255, 255, 0.18) 100%);
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.86) 100%);
 }
 [dir="rtl"][data-theme="dark"] .hero-h2-overlay {
-  background: linear-gradient(265deg, rgba(20, 20, 20, 0.94) 0%, rgba(20, 20, 20, 0.76) 55%, rgba(20, 20, 20, 0.40) 100%);
+  background: radial-gradient(circle at center, rgba(16, 18, 24, 0.72) 0%, rgba(16, 18, 24, 0.90) 100%);
 }
 
 /* Home 2 Subject Modules (Architectural Numbered List, Non-Photo) */
@@ -4135,7 +4140,6 @@ body.standalone-portal .portal-shell {
     padding-block: 68px;
   }
   .hero-h1-grid,
-  .hero-h2-inner,
   .page-hero-grid,
   .editorial-split,
   .editorial-split-reverse,

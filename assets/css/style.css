@@ -1533,7 +1533,7 @@ p {
 }
 
 .card-footer-action {
-  margin-top: auto;
+  margin-top: auto !important;
   padding-top: 12px;
   border-top: 1px solid var(--grey-light);
   display: flex;
@@ -4289,14 +4289,32 @@ body.standalone-portal .portal-shell {
   }
 }
 
-/* Tablet View (768px): Prevent Text & Button Collisions in Card Section */
+/* Tablet View (768px): Prevent Collisions & Pin Card Footers to Same Horizontal Line */
 @media (min-width: 768px) and (max-width: 880px) {
+  .grid-3x2 {
+    align-items: stretch !important;
+  }
+  .resource-item-card,
+  .program-card {
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .resource-item-card .program-card-body,
+  .program-card .program-card-body {
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 1 auto !important;
+    height: 100% !important;
+  }
   .resource-item-card .card-footer-action,
   .program-card .card-footer-action,
   .card-footer-action {
+    margin-top: auto !important;
     flex-direction: column !important;
     align-items: flex-start !important;
     gap: 12px !important;
+    width: 100% !important;
   }
   .card-footer-action .btn {
     width: 100% !important;

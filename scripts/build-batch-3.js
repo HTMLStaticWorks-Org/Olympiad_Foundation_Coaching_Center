@@ -922,7 +922,7 @@ function generateResources() {
             <span class="card-grade-pill" style="position:static; display:inline-block; margin-bottom:8px;">Grades 6–10 • Mathematics</span>
             <h3>Number Theory & Divisibility Proofs</h3>
             <p>Modular arithmetic, GCD algorithms, Chinese remainder theorem applications, and 50 solved Olympiad practice problems.</p>
-            <div class="card-footer-action" style="margin-top:20px;">
+            <div class="card-footer-action" style="margin-top:auto;">
               <span style="font-size:0.8rem; font-weight:700;">Format: PDF (3.2 MB)</span>
               <a href="practice-tests.html" class="btn btn-dark btn-sm">Attempt Online Mock →</a>
             </div>
@@ -935,7 +935,7 @@ function generateResources() {
             <span class="card-grade-pill" style="position:static; display:inline-block; margin-bottom:8px;">Grades 7–10 • Science</span>
             <h3>Kinematics & Projectile Vectors</h3>
             <p>Velocity-time graphs, 2D motion equations, relative velocity vectors, and 45 challenging NSO Stage 2 numericals.</p>
-            <div class="card-footer-action" style="margin-top:20px;">
+            <div class="card-footer-action" style="margin-top:auto;">
               <span style="font-size:0.8rem; font-weight:700;">Format: PDF (4.1 MB)</span>
               <a href="practice-tests.html" class="btn btn-dark btn-sm">Attempt Online Mock →</a>
             </div>
@@ -948,7 +948,7 @@ function generateResources() {
             <span class="card-grade-pill" style="position:static; display:inline-block; margin-bottom:8px;">Grades 4–8 • Reasoning</span>
             <h3>Spatial Rotation & Matrix Logic</h3>
             <p>Non-verbal pattern recognition drills, paper folding, cube projections, and rapid speed elimination strategies.</p>
-            <div class="card-footer-action" style="margin-top:20px;">
+            <div class="card-footer-action" style="margin-top:auto;">
               <span style="font-size:0.8rem; font-weight:700;">Format: PDF (2.8 MB)</span>
               <a href="practice-tests.html" class="btn btn-dark btn-sm">Attempt Online Mock →</a>
             </div>
@@ -961,7 +961,7 @@ function generateResources() {
             <span class="card-grade-pill" style="position:static; display:inline-block; margin-bottom:8px;">Grades 5–9 • English</span>
             <h3>IEO Vocabulary Etymology Handbook</h3>
             <p>1,200 Greek and Latin roots, contextual collocations, phrasal verbs, and common grammatical parallel structure traps.</p>
-            <div class="card-footer-action" style="margin-top:20px;">
+            <div class="card-footer-action" style="margin-top:auto;">
               <span style="font-size:0.8rem; font-weight:700;">Format: PDF (3.6 MB)</span>
               <a href="practice-tests.html" class="btn btn-dark btn-sm">Attempt Online Mock →</a>
             </div>
@@ -974,7 +974,7 @@ function generateResources() {
             <span class="card-grade-pill" style="position:static; display:inline-block; margin-bottom:8px;">Class 8 • Mock Paper</span>
             <h3>All-India IMO Mock Simulator #04</h3>
             <p>Full 50-question mock examination calibrated to official IMO Level 1 & Level 2 difficulty with complete solution key.</p>
-            <div class="card-footer-action" style="margin-top:20px;">
+            <div class="card-footer-action" style="margin-top:auto;">
               <span style="font-size:0.8rem; font-weight:700;">Format: PDF + Solutions</span>
               <a href="practice-tests.html" class="btn btn-dark btn-sm">Attempt Online Mock →</a>
             </div>
@@ -987,7 +987,7 @@ function generateResources() {
             <span class="card-grade-pill" style="position:static; display:inline-block; margin-bottom:8px;">Class 9 • Mock Paper</span>
             <h3>NSEJS National Junior Science Mock</h3>
             <p>60 high-difficulty physics, chemistry, and biology problems reflecting recent trends in international junior Olympiads.</p>
-            <div class="card-footer-action" style="margin-top:20px;">
+            <div class="card-footer-action" style="margin-top:auto;">
               <span style="font-size:0.8rem; font-weight:700;">Format: PDF + Key</span>
               <a href="practice-tests.html" class="btn btn-dark btn-sm">Attempt Online Mock →</a>
             </div>

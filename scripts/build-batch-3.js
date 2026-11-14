@@ -19,7 +19,7 @@ function generateResults() {
           <span>Results & Achievements</span>
         </div>
         <span class="eyebrow" style="color:var(--orange);">VERIFIED ALL-INDIA RANKINGS & PODIUMS</span>
-        <h1 style="color:var(--white); margin-top:8px;">Olympiad Results, Medals & All-India Ranks</h1>
+        <h1 style="color:#FFFFFF; margin-top:8px;">Olympiad Results, Medals & All-India Ranks</h1>
         <p class="lead" style="margin-top:14px; max-width:780px; margin-inline:auto;">
           Review our students' verified podium achievements, All-India ranks, and competitive medals in IMO, NSO, IEO, and PRMO.
         </p>
@@ -293,7 +293,7 @@ function generateSuccessStories() {
           <span>Success Stories</span>
         </div>
         <span class="eyebrow" style="color:var(--orange);">STUDENT INSPIRATIONS & CASE STUDIES</span>
-        <h1 style="color:var(--white); margin-top:8px;">Student Success Stories & Scholar Breakthroughs</h1>
+        <h1 style="color:#FFFFFF; margin-top:8px;">Student Success Stories & Scholar Breakthroughs</h1>
         <p class="lead" style="margin-top:14px; max-width:780px; margin-inline:auto;">
           Inspiring chronicles of students who transformed fear of difficult problems into deep intellectual curiosity and national competitive honors.
         </p>
@@ -456,7 +456,7 @@ function generateFaculty() {
           <span>Our Faculty</span>
         </div>
         <span class="eyebrow" style="color:var(--orange);">IIT, IISC & UNIVERSITY ALUMNI EDUCATORS</span>
-        <h1 style="color:var(--white); margin-top:8px;">Our Distinguished Faculty & Olympiad Mentors</h1>
+        <h1 style="color:#FFFFFF; margin-top:8px;">Our Distinguished Faculty & Olympiad Mentors</h1>
         <p class="lead" style="margin-top:14px; max-width:780px; margin-inline:auto;">
           Our academic faculty comprises former national Olympiad camp trainers, PhD scholars, and veteran pedagogues dedicated to mentoring young inquisitive minds.
         </p>
@@ -686,7 +686,7 @@ function generateMethodology() {
           <span>Learning Methodology</span>
         </div>
         <span class="eyebrow" style="color:var(--orange);">4-STAGE PEDAGOGICAL MODEL</span>
-        <h1 style="color:var(--white); margin-top:8px;">Our Concept-First Teaching Methodology</h1>
+        <h1 style="color:#FFFFFF; margin-top:8px;">Our Concept-First Teaching Methodology</h1>
         <p class="lead" style="margin-top:14px; max-width:780px; margin-inline:auto;">
           An institutional pedagogy refined over 18 years, designed to transform ordinary classroom learning into structured analytical inquiry and competitive mastery.
         </p>
@@ -889,7 +889,7 @@ function generateResources() {
           <span>Study Resources</span>
         </div>
         <span class="eyebrow" style="color:var(--orange);">FREE DOWNLOADS & CURATED REPOSITORY</span>
-        <h1 style="color:var(--white); margin-top:8px;">Olympiad Study Materials & Question Banks</h1>
+        <h1 style="color:#FFFFFF; margin-top:8px;">Olympiad Study Materials & Question Banks</h1>
         <p class="lead" style="margin-top:14px; max-width:780px; margin-inline:auto;">
           Download curated practice worksheets, chapter-wise question banks, formula booklets, and official previous-year Olympiad mock papers.
         </p>

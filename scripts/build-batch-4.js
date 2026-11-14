@@ -19,7 +19,7 @@ function generateContact() {
           <span>Contact Us</span>
         </div>
         <span class="eyebrow" style="color:var(--orange);">DELHI & BENGALURU CAMPUSES • ADMISSIONS OPEN</span>
-        <h1 style="color:var(--white); margin-top:8px;">Contact Admissions & Campus Centers</h1>
+        <h1 style="color:#FFFFFF; margin-top:8px;">Contact Admissions & Campus Centers</h1>
         <p class="lead" style="margin-top:14px; max-width:780px; margin-inline:auto;">
           Have questions about program eligibility, grade diagnostic testing, or batch timings? Our admissions counselors and subject heads are ready to assist you.
         </p>
@@ -1800,9 +1800,9 @@ function generatePracticeTests() {
           <h1>All-India Olympiad Foundation Mock Test</h1>
           <p style="font-size:0.92rem; color:var(--text-muted);">Simulated timed test calibrated with auto-scoring and detailed cognitive explanations.</p>
         </div>
-        <div style="background-color:var(--black); color:var(--white); padding:10px 22px; border-radius:var(--radius-md); display:flex; align-items:center; gap:12px;">
+        <div style="background-color:var(--black); color:#FFFFFF; padding:10px 22px; border-radius:var(--radius-md); display:flex; align-items:center; gap:12px;">
           <span style="font-size:0.78rem; text-transform:uppercase; font-weight:800; color:var(--orange);">Time Remaining:</span>
-          <span id="examTimer" style="font-family:var(--font-display); font-size:1.4rem; font-weight:800; color:var(--white);">20:00</span>
+          <span id="examTimer" style="font-family:var(--font-display); font-size:1.4rem; font-weight:800; color:#FFFFFF;">20:00</span>
         </div>
       </div>
     </div>

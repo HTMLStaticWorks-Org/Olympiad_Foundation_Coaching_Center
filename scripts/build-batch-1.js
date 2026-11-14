@@ -1092,7 +1092,7 @@ function generateAbout() {
           <span>About Institution</span>
         </div>
         <span class="eyebrow" style="color:var(--orange);">INSTITUTIONAL HERITAGE & MISSION</span>
-        <h1 style="color:var(--white); margin-top:8px;">About Pragyan: 18 Years of Olympiad Excellence</h1>
+        <h1 style="color:#FFFFFF; margin-top:8px;">About Pragyan: 18 Years of Olympiad Excellence</h1>
         <p class="lead" style="margin-top:14px; max-width:780px; margin-inline:auto;">
           Established in 2008, Pragyan Olympiad Academy has set the gold standard in foundational coaching for competitive Mathematics (IMO, PRMO), Science (NSO, IJSO), and Reasoning examinations across India.
         </p>
@@ -1140,9 +1140,9 @@ function generateAbout() {
             To be India's premier academic center for young scholars, recognized internationally for nurturing rigorous scientific inquiry, mathematical elegance, and ethical competitive leadership from early childhood through secondary education.
           </p>
         </div>
-        <div style="background-color:var(--black); color:var(--white); padding:38px 40px; border-radius:var(--radius-lg); border-top:5px solid var(--orange);">
+        <div style="background-color:var(--black); color:#FFFFFF; padding:38px 40px; border-radius:var(--radius-lg); border-top:5px solid var(--orange);">
           <span class="eyebrow" style="color:var(--orange);">OPERATIONAL MISSION</span>
-          <h3 style="color:var(--white); margin-top:8px;">Our Mission</h3>
+          <h3 style="color:#FFFFFF; margin-top:8px;">Our Mission</h3>
           <p style="margin-top:12px; color:var(--text-on-dark-muted); line-height:1.7;">
             To empower students with robust conceptual foundations, critical thinking frameworks, and examination composure through passionate mentorship, verified diagnostic analytics, and inspiring educational environments.
           </p>
@@ -1410,7 +1410,7 @@ function generatePrograms() {
           <span>Programs Catalogue</span>
         </div>
         <span class="eyebrow" style="color:var(--orange);">COMPREHENSIVE FOUNDATION TRACKS (GRADES 1 TO 10)</span>
-        <h1 style="color:var(--white); margin-top:8px;">Olympiad Coaching Programs (Grades 1 to 10)</h1>
+        <h1 style="color:#FFFFFF; margin-top:8px;">Olympiad Coaching Programs (Grades 1 to 10)</h1>
         <p class="lead" style="margin-top:14px; max-width:780px; margin-inline:auto;">
           Explore our structured Olympiad training curriculum spanning Mathematics, Natural Sciences, Logical Reasoning, and English, systematically mapped for Grades 1 through 10.
         </p>

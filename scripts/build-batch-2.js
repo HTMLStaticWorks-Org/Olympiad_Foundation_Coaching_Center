@@ -21,7 +21,7 @@ function generateMathematics() {
           <span>Mathematics Olympiad</span>
         </div>
         <span class="eyebrow" style="color:var(--orange);">SPECIALIZED FOUNDATION PROGRAM • GRADES 1 TO 10</span>
-        <h1 style="color:var(--white); margin-top:8px;">Mathematics Olympiad Foundation (IMO & PRMO)</h1>
+        <h1 style="color:#FFFFFF; margin-top:8px;">Mathematics Olympiad Foundation (IMO & PRMO)</h1>
         <p class="lead" style="margin-top:14px; max-width:780px; margin-inline:auto;">
           Cultivating numerical intuition, geometric proofs, and advanced analytical problem-solving for IMO, PRMO, NMTC, and AMC 8/10.
         </p>
@@ -259,7 +259,7 @@ function generateScience() {
           <span>Science Olympiad</span>
         </div>
         <span class="eyebrow" style="color:var(--orange);">SPECIALIZED FOUNDATION PROGRAM • GRADES 3 TO 10</span>
-        <h1 style="color:var(--white); margin-top:8px;">Science Olympiad Foundation (NSO & IJSO)</h1>
+        <h1 style="color:#FFFFFF; margin-top:8px;">Science Olympiad Foundation (NSO & IJSO)</h1>
         <p class="lead" style="margin-top:14px; max-width:780px; margin-inline:auto;">
           Empirical physics, reaction chemistry, and biological systems training designed for NSO, NSEJS, IJSO, and Kishore Vaigyanik benchmarks.
         </p>
@@ -520,7 +520,7 @@ function generateReasoning() {
           <span>Logical Reasoning</span>
         </div>
         <span class="eyebrow" style="color:var(--orange);">COGNITIVE APTITUDE PROGRAM • GRADES 1 TO 10</span>
-        <h1 style="color:var(--white); margin-top:8px;">Logical Reasoning & Mental Ability Coaching</h1>
+        <h1 style="color:#FFFFFF; margin-top:8px;">Logical Reasoning & Mental Ability Coaching</h1>
         <p class="lead" style="margin-top:14px; max-width:780px; margin-inline:auto;">
           Mastery over non-verbal spatial reasoning, algorithmic sequences, syllogisms, and puzzle deconstruction for NTSE, Olympiads, and competitive entrance tests.
         </p>
@@ -765,7 +765,7 @@ function generateEnglish() {
           <span>English Olympiad</span>
         </div>
         <span class="eyebrow" style="color:var(--orange);">LINGUISTIC EXCELLENCE • GRADES 1 TO 10</span>
-        <h1 style="color:var(--white); margin-top:8px;">English Olympiad Coaching (IEO Foundation)</h1>
+        <h1 style="color:#FFFFFF; margin-top:8px;">English Olympiad Coaching (IEO Foundation)</h1>
         <p class="lead" style="margin-top:14px; max-width:780px; margin-inline:auto;">
           Cultivating rich lexical precision, complex syntactical grammar, and critical reading comprehension for national and international English competitions.
         </p>
@@ -1020,7 +1020,7 @@ function generateGrades() {
           <span>Grade-Wise Learning</span>
         </div>
         <span class="eyebrow" style="color:var(--orange);">STRUCTURED DEVELOPMENTAL ROADMAPS</span>
-        <h1 style="color:var(--white); margin-top:8px;">Grade-Wise Learning Pathways (Grades 1 to 10)</h1>
+        <h1 style="color:#FFFFFF; margin-top:8px;">Grade-Wise Learning Pathways (Grades 1 to 10)</h1>
         <p class="lead" style="margin-top:14px; max-width:780px; margin-inline:auto;">
           Tailored pedagogical stages designed to match cognitive readiness, from playful concrete patterns in early primary years to rigorous mathematical proofs in secondary grades.
         </p>

@@ -9,7 +9,7 @@ function generateResults() {
   const content = `
   <!-- HERO -->
   <section class="page-hero">
-    <img src="images/image-31.png" alt="Full examination auditorium during national Olympiad testing session" class="page-hero-bg" loading="eager">
+    <img src="images/image-31.png" alt="Full examination auditorium during national Olympiad testing session" class="page-hero-bg" loading="eager" fetchpriority="high" decoding="async" width="1920" height="1130">
     <div class="page-hero-overlay"></div>
     <div class="container">
       <div class="page-hero-content text-center">
@@ -192,7 +192,7 @@ function generateResults() {
         </div>
         <div>
           <div class="editorial-img-box">
-            <img src="images/image-62.png" alt="Physics educator illustrating orbital velocity and trajectory formulas on digital panel">
+            <img src="images/image-62.png" alt="Physics educator illustrating orbital velocity and trajectory formulas on digital panel" loading="lazy" decoding="async" width="1400" height="933">
             <div class="editorial-caption-bar">
               <span>Mechanics & Gravitation Class</span>
               <small style="color:var(--orange);">NSO Stage 2 Training</small>
@@ -204,7 +204,7 @@ function generateResults() {
       <div class="editorial-split-reverse">
         <div>
           <div class="editorial-img-box">
-            <img src="images/image-64.png" alt="Mathematics educator teaching coordinate geometry and tangent lines on interactive digital board">
+            <img src="images/image-64.png" alt="Mathematics educator teaching coordinate geometry and tangent lines on interactive digital board" loading="lazy" decoding="async" width="1280" height="719">
             <div class="editorial-caption-bar">
               <span>Coordinate Geometry Lecture</span>
               <small style="color:var(--orange);">PRMO / IMO Proofs</small>
@@ -242,7 +242,7 @@ function generateResults() {
         </div>
         <div>
           <div class="editorial-img-box">
-            <img src="images/image-32.png" alt="Tiered lecture amphitheater filled with scholars writing competitive mock Olympiad exam">
+            <img src="images/image-32.png" alt="Tiered lecture amphitheater filled with scholars writing competitive mock Olympiad exam" loading="lazy" decoding="async" width="1200" height="900">
             <div class="editorial-caption-bar">
               <span>Full-Scale All-India Mock Session</span>
               <small style="color:var(--orange);">Exam Composure Simulator</small>

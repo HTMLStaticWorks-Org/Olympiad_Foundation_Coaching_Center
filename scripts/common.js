@@ -44,42 +44,42 @@ function getHeader(activeKey) {
               </div>
               <div class="mega-links-grid">
                 <a href="mathematics.html" class="mega-card-link">
-                  <img src="images/image-65.png" alt="Math Olympiad Proofs" class="mega-card-thumb">
+                  <img src="images/image-65.png" alt="Math Olympiad Proofs" class="mega-card-thumb" loading="lazy" decoding="async" width="90" height="90">
                   <div class="mega-card-content">
                     <span class="mega-card-title">Mathematics Olympiad</span>
                     <span class="mega-card-desc">IMO, NMTC, PRMO, AMC 8/10 foundation & advanced problem-solving.</span>
                   </div>
                 </a>
                 <a href="science.html" class="mega-card-link">
-                  <img src="images/image-69.png" alt="Science Lab Titrations" class="mega-card-thumb">
+                  <img src="images/image-69.png" alt="Science Lab Titrations" class="mega-card-thumb" loading="lazy" decoding="async" width="90" height="90">
                   <div class="mega-card-content">
                     <span class="mega-card-title">Science Olympiad</span>
                     <span class="mega-card-desc">NSO, IJSO, NSEJS rigorous physics, chemistry & biology foundations.</span>
                   </div>
                 </a>
                 <a href="reasoning.html" class="mega-card-link">
-                  <img src="images/image-73.png" alt="Logical Reasoning Puzzles" class="mega-card-thumb">
+                  <img src="images/image-73.png" alt="Logical Reasoning Puzzles" class="mega-card-thumb" loading="lazy" decoding="async" width="90" height="90">
                   <div class="mega-card-content">
                     <span class="mega-card-title">Logical Reasoning</span>
                     <span class="mega-card-desc">Mental ability, non-verbal patterns, analytical puzzles & deduction.</span>
                   </div>
                 </a>
                 <a href="english.html" class="mega-card-link">
-                  <img src="images/image-77.png" alt="English Reading & Lexicon" class="mega-card-thumb">
+                  <img src="images/image-77.png" alt="English Reading & Lexicon" class="mega-card-thumb" loading="lazy" decoding="async" width="90" height="90">
                   <div class="mega-card-content">
                     <span class="mega-card-title">English Olympiad</span>
                     <span class="mega-card-desc">IEO, spelling, verbal reasoning, linguistics & reading comprehension.</span>
                   </div>
                 </a>
                 <a href="grades.html" class="mega-card-link">
-                  <img src="images/image-79.png" alt="Grade-Wise Classroom" class="mega-card-thumb">
+                  <img src="images/image-79.png" alt="Grade-Wise Classroom" class="mega-card-thumb" loading="lazy" decoding="async" width="90" height="90">
                   <div class="mega-card-content">
                     <span class="mega-card-title">Grade-Wise Learning</span>
                     <span class="mega-card-desc">Targeted curriculum tracks from Primary (1–3) to Advanced (9–10).</span>
                   </div>
                 </a>
                 <a href="methodology.html" class="mega-card-link">
-                  <img src="images/image-82.png" alt="Personalized Learning Method" class="mega-card-thumb">
+                  <img src="images/image-82.png" alt="Personalized Learning Method" class="mega-card-thumb" loading="lazy" decoding="async" width="90" height="90">
                   <div class="mega-card-content">
                     <span class="mega-card-title">Learning Methodology</span>
                     <span class="mega-card-desc">Concept building, guided practice, weekly diagnostics & analytics.</span>

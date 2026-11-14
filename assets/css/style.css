@@ -3132,6 +3132,15 @@ body.standalone-portal .portal-shell {
     gap: 18px;
   }
 }
+/* Dashboard Study Resources Grid: Center align the 9th / last card in 2-column tablet layout (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .resources-grid-3x3 > *:last-child:nth-child(odd) {
+    grid-column: 1 / -1 !important;
+    justify-self: center !important;
+    width: 100% !important;
+    max-width: calc(50% - 9px) !important;
+  }
+}
 @media (max-width: 767px) {
   .resources-grid-3x3 {
     grid-template-columns: 1fr !important;
@@ -4289,6 +4298,40 @@ body.standalone-portal .portal-shell {
   }
 }
 
+/* Dashboard Practice Tests: Align Action Buttons to Same Horizontal Baseline */
+.portal-test-grid {
+  align-items: stretch !important;
+}
+.portal-test-card {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  height: 100% !important;
+}
+.portal-test-card > div:first-child {
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 1 auto !important;
+}
+.portal-test-card > button:last-child {
+  margin-top: auto !important;
+  width: 100% !important;
+}
+
+/* Dashboard Batch Card Actions: One-by-One Buttons at 900px and Below */
+@media (max-width: 900px) {
+  .batch-card-actions {
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+  .batch-card-actions .btn {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+}
+
 /* Tablet View (768px): Prevent Collisions & Pin Card Footers to Same Horizontal Line */
 @media (min-width: 768px) and (max-width: 880px) {
   .grid-3x2 {
@@ -4309,14 +4352,16 @@ body.standalone-portal .portal-shell {
   }
   .resource-item-card .card-footer-action,
   .program-card .card-footer-action,
-  .card-footer-action {
+  .card-footer-action,
+  .batch-card-actions {
     margin-top: auto !important;
     flex-direction: column !important;
     align-items: flex-start !important;
-    gap: 12px !important;
+    gap: 10px !important;
     width: 100% !important;
   }
-  .card-footer-action .btn {
+  .card-footer-action .btn,
+  .batch-card-actions .btn {
     width: 100% !important;
     text-align: center !important;
     justify-content: center !important;
@@ -4486,13 +4531,16 @@ body.standalone-portal .portal-shell {
   /* Card Section One-by-One Alignment in All Mobile Views */
   .resource-item-card .card-footer-action,
   .program-card .card-footer-action,
-  .card-footer-action {
+  .card-footer-action,
+  .batch-card-actions {
     flex-direction: column !important;
     align-items: flex-start !important;
-    gap: 12px !important;
+    gap: 10px !important;
+    width: 100% !important;
   }
   .card-footer-action .btn,
-  .card-footer-action .btn-link {
+  .card-footer-action .btn-link,
+  .batch-card-actions .btn {
     width: 100% !important;
     text-align: center !important;
     justify-content: center !important;

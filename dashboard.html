@@ -335,7 +335,7 @@
                 <div class="progress-track"><div class="progress-fill" style="width:78%;"></div></div>
               </div>
             </div>
-            <div style="display:flex; gap:10px; padding-top:12px; border-top:1px solid var(--grey-light);">
+            <div class="batch-card-actions" style="display:flex; gap:10px; padding-top:12px; border-top:1px solid var(--grey-light);">
               <button type="button" class="btn btn-primary btn-sm" data-tab-target="practice-tests">Practice Math Mock →</button>
               <button type="button" class="btn btn-outline btn-sm" data-tab-target="resources">Module Notes</button>
             </div>
@@ -364,7 +364,7 @@
                 <div class="progress-track"><div class="progress-fill" style="width:65%;"></div></div>
               </div>
             </div>
-            <div style="display:flex; gap:10px; padding-top:12px; border-top:1px solid var(--grey-light);">
+            <div class="batch-card-actions" style="display:flex; gap:10px; padding-top:12px; border-top:1px solid var(--grey-light);">
               <button type="button" class="btn btn-primary btn-sm" data-tab-target="practice-tests">Practice Science Mock →</button>
               <button type="button" class="btn btn-outline btn-sm" data-tab-target="resources">Module Notes</button>
             </div>
@@ -393,7 +393,7 @@
                 <div class="progress-track"><div class="progress-fill" style="width:85%;"></div></div>
               </div>
             </div>
-            <div style="display:flex; gap:10px; padding-top:12px; border-top:1px solid var(--grey-light);">
+            <div class="batch-card-actions" style="display:flex; gap:10px; padding-top:12px; border-top:1px solid var(--grey-light);">
               <button type="button" class="btn btn-primary btn-sm" data-tab-target="practice-tests">Practice Logic Mock →</button>
               <button type="button" class="btn btn-outline btn-sm" data-tab-target="resources">Module Notes</button>
             </div>
@@ -422,7 +422,7 @@
                 <div class="progress-track"><div class="progress-fill" style="width:50%;"></div></div>
               </div>
             </div>
-            <div style="display:flex; gap:10px; padding-top:12px; border-top:1px solid var(--grey-light);">
+            <div class="batch-card-actions" style="display:flex; gap:10px; padding-top:12px; border-top:1px solid var(--grey-light);">
               <button type="button" class="btn btn-primary btn-sm" data-tab-target="practice-tests">Practice IEO Mock →</button>
               <button type="button" class="btn btn-outline btn-sm" data-tab-target="resources">Module Notes</button>
             </div>
@@ -441,69 +441,77 @@
         </div>
 
         <!-- 4 LIVE / SCHEDULED MOCK TESTS -->
-        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:20px; margin-bottom:32px;">
+        <div class="portal-test-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:20px; margin-bottom:32px;">
           <!-- Test 1 -->
-          <div class="portal-panel" style="border-top:3.5px solid var(--orange);">
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-              <span class="badge" style="background:rgba(255,94,14,0.14); color:var(--orange-deep); font-weight:700;">LIVE MOCK TEST</span>
-              <span style="font-size:0.78rem; color:var(--text-muted);">Tier 1 National</span>
+          <div class="portal-panel portal-test-card" style="border-top:3.5px solid var(--orange);">
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <span class="badge" style="background:rgba(255,94,14,0.14); color:var(--orange-deep); font-weight:700;">LIVE MOCK TEST</span>
+                <span style="font-size:0.78rem; color:var(--text-muted);">Tier 1 National</span>
+              </div>
+              <h3 style="font-size:1.15rem; margin-bottom:6px;">All-India IMO Mock Benchmark #05</h3>
+              <p style="font-size:0.84rem; color:var(--text-muted); margin-bottom:12px;">30 Non-Routine Olympiad Questions • Euclidean Geometry, Polynomials & Modulo Arithmetic.</p>
+              <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--text-muted); margin-bottom:14px; background:var(--bg-soft); padding:8px 12px; border-radius:6px;">
+                <span><strong>Duration:</strong> 60 Mins</span>
+                <span><strong>Marking:</strong> +3 / -1</span>
+                <span><strong>Questions:</strong> 30</span>
+              </div>
             </div>
-            <h3 style="font-size:1.15rem; margin-bottom:6px;">All-India IMO Mock Benchmark #05</h3>
-            <p style="font-size:0.84rem; color:var(--text-muted); margin-bottom:12px;">30 Non-Routine Olympiad Questions • Euclidean Geometry, Polynomials & Modulo Arithmetic.</p>
-            <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--text-muted); margin-bottom:14px; background:var(--bg-soft); padding:8px 12px; border-radius:6px;">
-              <span><strong>Duration:</strong> 60 Mins</span>
-              <span><strong>Marking:</strong> +3 / -1</span>
-              <span><strong>Questions:</strong> 30</span>
-            </div>
-            <button type="button" class="btn btn-primary btn-sm" style="width:100%;" onclick="alert('Starting All-India IMO Mock #05 exam simulation environment...');">Launch Test Environment →</button>
+            <button type="button" class="btn btn-primary btn-sm" style="width:100%; margin-top:auto;" onclick="alert('Starting All-India IMO Mock #05 exam simulation environment...');">Launch Test Environment →</button>
           </div>
 
           <!-- Test 2 -->
-          <div class="portal-panel" style="border-top:3.5px solid var(--success);">
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-              <span class="badge" style="background:rgba(31,138,76,0.14); color:var(--success); font-weight:700;">LIVE SCIENCE TEST</span>
-              <span style="font-size:0.78rem; color:var(--text-muted);">NSEJS Stage 1</span>
+          <div class="portal-panel portal-test-card" style="border-top:3.5px solid var(--success);">
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <span class="badge" style="background:rgba(31,138,76,0.14); color:var(--success); font-weight:700;">LIVE SCIENCE TEST</span>
+                <span style="font-size:0.78rem; color:var(--text-muted);">NSEJS Stage 1</span>
+              </div>
+              <h3 style="font-size:1.15rem; margin-bottom:6px;">NSEJS Physics Rapid Diagnostic #03</h3>
+              <p style="font-size:0.84rem; color:var(--text-muted); margin-bottom:12px;">25 Problems • Geometric Optics, Vector Kinematics & Energy Work Theorems.</p>
+              <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--text-muted); margin-bottom:14px; background:var(--bg-soft); padding:8px 12px; border-radius:6px;">
+                <span><strong>Duration:</strong> 45 Mins</span>
+                <span><strong>Marking:</strong> +4 / -1</span>
+                <span><strong>Questions:</strong> 25</span>
+              </div>
             </div>
-            <h3 style="font-size:1.15rem; margin-bottom:6px;">NSEJS Physics Rapid Diagnostic #03</h3>
-            <p style="font-size:0.84rem; color:var(--text-muted); margin-bottom:12px;">25 Problems • Geometric Optics, Vector Kinematics & Energy Work Theorems.</p>
-            <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--text-muted); margin-bottom:14px; background:var(--bg-soft); padding:8px 12px; border-radius:6px;">
-              <span><strong>Duration:</strong> 45 Mins</span>
-              <span><strong>Marking:</strong> +4 / -1</span>
-              <span><strong>Questions:</strong> 25</span>
-            </div>
-            <button type="button" class="btn btn-primary btn-sm" style="width:100%;" onclick="alert('Starting NSEJS Physics Rapid Diagnostic #03 simulation environment...');">Launch Test Environment →</button>
+            <button type="button" class="btn btn-primary btn-sm" style="width:100%; margin-top:auto;" onclick="alert('Starting NSEJS Physics Rapid Diagnostic #03 simulation environment...');">Launch Test Environment →</button>
           </div>
 
           <!-- Test 3 -->
-          <div class="portal-panel" style="border-top:3.5px solid var(--black);">
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-              <span class="badge" style="background:rgba(0,0,0,0.08); color:var(--black); font-weight:700;">TOPIC BENCHMARK</span>
-              <span style="font-size:0.78rem; color:var(--text-muted);">Mental Ability</span>
+          <div class="portal-panel portal-test-card" style="border-top:3.5px solid var(--black);">
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <span class="badge" style="background:rgba(0,0,0,0.08); color:var(--black); font-weight:700;">TOPIC BENCHMARK</span>
+                <span style="font-size:0.78rem; color:var(--text-muted);">Mental Ability</span>
+              </div>
+              <h3 style="font-size:1.15rem; margin-bottom:6px;">Logical Reasoning Benchmark 4</h3>
+              <p style="font-size:0.84rem; color:var(--text-muted); margin-bottom:12px;">35 Matrix & Spatial Reasoning Benchmarks • Non-verbal figure analysis.</p>
+              <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--text-muted); margin-bottom:14px; background:var(--bg-soft); padding:8px 12px; border-radius:6px;">
+                <span><strong>Duration:</strong> 50 Mins</span>
+                <span><strong>Marking:</strong> +1 / 0</span>
+                <span><strong>Questions:</strong> 35</span>
+              </div>
             </div>
-            <h3 style="font-size:1.15rem; margin-bottom:6px;">Logical Reasoning Benchmark 4</h3>
-            <p style="font-size:0.84rem; color:var(--text-muted); margin-bottom:12px;">35 Matrix & Spatial Reasoning Benchmarks • Non-verbal figure analysis.</p>
-            <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--text-muted); margin-bottom:14px; background:var(--bg-soft); padding:8px 12px; border-radius:6px;">
-              <span><strong>Duration:</strong> 50 Mins</span>
-              <span><strong>Marking:</strong> +1 / 0</span>
-              <span><strong>Questions:</strong> 35</span>
-            </div>
-            <button type="button" class="btn btn-outline btn-sm" style="width:100%;" onclick="alert('Starting Logical Reasoning Benchmark 4...');">Take Benchmark →</button>
+            <button type="button" class="btn btn-outline btn-sm" style="width:100%; margin-top:auto;" onclick="alert('Starting Logical Reasoning Benchmark 4...');">Take Benchmark →</button>
           </div>
 
           <!-- Test 4 -->
-          <div class="portal-panel" style="border-top:3.5px solid var(--grey-mid);">
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-              <span class="badge" style="background:rgba(0,102,204,0.12); color:#0066CC; font-weight:700;">SUBJECTIVE DRILL</span>
-              <span style="font-size:0.78rem; color:var(--text-muted);">PRMO Prep</span>
+          <div class="portal-panel portal-test-card" style="border-top:3.5px solid var(--grey-mid);">
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <span class="badge" style="background:rgba(0,102,204,0.12); color:#0066CC; font-weight:700;">SUBJECTIVE DRILL</span>
+                <span style="font-size:0.78rem; color:var(--text-muted);">PRMO Prep</span>
+              </div>
+              <h3 style="font-size:1.15rem; margin-bottom:6px;">PRMO Number Theory Problem Set B</h3>
+              <p style="font-size:0.84rem; color:var(--text-muted); margin-bottom:12px;">15 Deep Challenge Proofs • Modular arithmetic & Chinese Remainder Theorem.</p>
+              <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--text-muted); margin-bottom:14px; background:var(--bg-soft); padding:8px 12px; border-radius:6px;">
+                <span><strong>Duration:</strong> 45 Mins</span>
+                <span><strong>Marking:</strong> Subjective</span>
+                <span><strong>Questions:</strong> 15</span>
+              </div>
             </div>
-            <h3 style="font-size:1.15rem; margin-bottom:6px;">PRMO Number Theory Problem Set B</h3>
-            <p style="font-size:0.84rem; color:var(--text-muted); margin-bottom:12px;">15 Deep Challenge Proofs • Modular arithmetic & Chinese Remainder Theorem.</p>
-            <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--text-muted); margin-bottom:14px; background:var(--bg-soft); padding:8px 12px; border-radius:6px;">
-              <span><strong>Duration:</strong> 45 Mins</span>
-              <span><strong>Marking:</strong> Subjective</span>
-              <span><strong>Questions:</strong> 15</span>
-            </div>
-            <button type="button" class="btn btn-outline btn-sm" style="width:100%;" onclick="alert('Starting PRMO Number Theory Problem Set B...');">Take Problem Set →</button>
+            <button type="button" class="btn btn-outline btn-sm" style="width:100%; margin-top:auto;" onclick="alert('Starting PRMO Number Theory Problem Set B...');">Take Problem Set →</button>
           </div>
         </div>
 

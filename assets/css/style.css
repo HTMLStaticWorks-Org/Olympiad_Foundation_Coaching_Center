@@ -5157,6 +5157,12 @@ body.standalone-portal .portal-shell {
   border-radius: var(--radius-lg);
   border-top: 5px solid var(--orange);
 }
+.mission-card h3 {
+  color: #FFFFFF;
+}
+.mission-card p {
+  color: #F1F5F9;
+}
 [data-theme="dark"] .vision-card {
   background-color: #1E1E1E !important;
   border-color: #333333 !important;
@@ -5179,7 +5185,7 @@ body.standalone-portal .portal-shell {
   color: #FFFFFF !important;
 }
 [data-theme="dark"] .mission-card p {
-  color: #CBD5E1 !important;
+  color: #F1F5F9 !important;
 }
 
 /* Practice Exam Timer & Options */
